@@ -29,7 +29,7 @@ export default function ServicesSection() {
       gradient: "from-primary-pink to-primary-yellow"
     },
     {
-      icon: "�",
+      icon: "📈",
       title: "Marketing Digital",
       subtitle: "Estrategia & Crecimiento",
       description: "Implementamos estrategias de marketing digital data-driven que generan ROI medible.",
@@ -63,11 +63,11 @@ export default function ServicesSection() {
         </div>
 
         {/* Grid de categorías de servicios */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 items-stretch">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
           {serviceCategories.map((category, index) => (
             <div
               key={index}
-              className="group bg-white/90 backdrop-blur-sm rounded-3xl p-8 hover:shadow-2xl transition-all duration-500 border border-primary-light-pink/20 hover:border-primary-blue/30 transform hover:-translate-y-3 flex flex-col h-full"
+              className="group bg-white/90 backdrop-blur-sm rounded-3xl p-8 hover:shadow-2xl transition-all duration-500 border border-primary-light-pink/20 hover:border-primary-blue/30 transform hover:-translate-y-3"
             >
               {/* Header del bloque */}
               <div className="text-center mb-8">
@@ -88,7 +88,7 @@ export default function ServicesSection() {
               </p>
               
               {/* Lista de características */}
-              <div className="space-y-4 flex-grow">
+              <div className="space-y-4 mb-8">
                 {category.features.map((feature, featureIndex) => (
                   <div key={featureIndex} className="flex items-start space-x-3">
                     <div className={`w-2 h-2 rounded-full bg-gradient-to-r ${category.gradient} mt-2 flex-shrink-0`}></div>
@@ -97,9 +97,13 @@ export default function ServicesSection() {
                 ))}
               </div>
               
-              {/* Línea decorativa al final */}
-              <div className="mt-8 flex justify-center">
-                <div className={`w-16 h-1 bg-gradient-to-r ${category.gradient} rounded-full opacity-70 group-hover:opacity-100 transition-opacity duration-300`}></div>
+              {/* Acción específica por categoría */}
+              <div className="text-center">
+                <button className={`px-6 py-3 bg-gradient-to-r ${category.gradient} text-white font-semibold rounded-xl hover:shadow-lg transition-all duration-300 transform hover:scale-105`}>
+                  {category.title === "Redes Sociales" && "Ver Portfolio"}
+                  {category.title === "Web & E-commerce" && "Ver Proyectos"}
+                  {category.title === "Marketing Digital" && "Solicitar Auditoría"}
+                </button>
               </div>
             </div>
           ))}

@@ -1,46 +1,45 @@
 'use client';
 
 export default function ServicesSection() {
-  const services = [
+  const serviceCategories = [
     {
       icon: "📱",
-      title: "Gestión de Redes Sociales",
-      description: "Administración completa de tus perfiles, creación de contenido y engagement con tu audiencia."
-    },
-    {
-      icon: "🎨",
-      title: "Diseño Gráfico",
-      description: "Creamos diseños únicos y atractivos que reflejan la personalidad de tu marca en cada publicación."
+      title: "Redes Sociales",
+      subtitle: "Community Management",
+      description: "Construimos y gestionamos tu presencia en redes sociales para conectar auténticamente con tu audiencia.",
+      features: [
+        "Gestión completa de perfiles",
+        "Creación de contenido visual y copywriting",
+        "Estrategias de engagement y crecimiento",
+        "Análisis de métricas y reportes"
+      ],
+      gradient: "from-primary-blue to-primary-pink"
     },
     {
       icon: "🌐",
-      title: "Desarrollo Web - Landing Pages",
-      description: "Creamos landing pages optimizadas para conversión que capturan leads y generan resultados."
+      title: "Web & E-commerce",
+      subtitle: "Desarrollo Digital",
+      description: "Desarrollamos sitios web y tiendas online que convierten visitantes en clientes fieles.",
+      features: [
+        "Landing pages optimizadas para conversión",
+        "Tiendas online con pasarelas de pago",
+        "Aplicaciones web y sistemas SaaS",
+        "Optimización SEO y performance"
+      ],
+      gradient: "from-primary-pink to-primary-yellow"
     },
     {
-      icon: "🛒",
-      title: "Tiendas Online",
-      description: "E-commerce completo con pasarelas de pago, gestión de inventario y experiencia de usuario optimizada."
-    },
-    {
-      icon: "⚡",
-      title: "Aplicaciones SaaS",
-      description: "Desarrollo de software como servicio escalable y seguro para automatizar procesos de negocio."
-    },
-    {
-      icon: "🔍",
-      title: "SEO y Marketing Digital",
-      description: "Optimización para buscadores y estrategias de marketing digital para aumentar tu visibilidad online."
-    },
-    {
-      icon: "📊",
-      title: "Análisis y Reportes",
-      description: "Métricas detalladas y análisis de rendimiento para optimizar tus estrategias digitales."
-    },
-    {
-      icon: "💬",
-      title: "Consultoría Digital",
-      description: "Asesoramiento estratégico personalizado para impulsar el crecimiento de tu presencia digital."
+      icon: "�",
+      title: "Marketing Digital",
+      subtitle: "Estrategia & Crecimiento",
+      description: "Implementamos estrategias de marketing digital data-driven que generan ROI medible.",
+      features: [
+        "Campañas publicitarias en Google y Meta",
+        "Email marketing y automatización",
+        "SEO y posicionamiento orgánico", 
+        "Consultoría y auditorías digitales"
+      ],
+      gradient: "from-primary-yellow to-primary-blue"
     }
   ];
 
@@ -63,28 +62,48 @@ export default function ServicesSection() {
           </p>
         </div>
 
-        {/* Grid de servicios */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-12 sm:mb-16">
-          {services.map((service, index) => (
+        {/* Grid de categorías de servicios */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
+          {serviceCategories.map((category, index) => (
             <div
               key={index}
-              className="group bg-white/80 backdrop-blur-sm rounded-2xl p-4 sm:p-6 hover:shadow-2xl transition-all duration-500 border border-primary-light-pink/20 hover:border-primary-blue/30 transform hover:-translate-y-2"
+              className="group bg-white/90 backdrop-blur-sm rounded-3xl p-8 hover:shadow-2xl transition-all duration-500 border border-primary-light-pink/20 hover:border-primary-blue/30 transform hover:-translate-y-3"
             >
-              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-primary-blue to-primary-pink rounded-2xl flex items-center justify-center mx-auto mb-4 sm:mb-6 group-hover:scale-110 transition-transform duration-300">
-                <span className="text-white text-xl sm:text-2xl">{service.icon}</span>
+              {/* Header del bloque */}
+              <div className="text-center mb-8">
+                <div className="text-6xl mb-4 group-hover:scale-110 transition-transform duration-300">
+                  {category.icon}
+                </div>
+                <h3 className="text-2xl font-bold text-gray-800 mb-2 group-hover:text-primary-blue transition-colors">
+                  {category.title}
+                </h3>
+                <div className={`text-sm font-semibold bg-gradient-to-r ${category.gradient} bg-clip-text text-transparent uppercase tracking-wide`}>
+                  {category.subtitle}
+                </div>
               </div>
               
-              <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 sm:mb-3 text-center group-hover:text-primary-blue transition-colors">
-                {service.title}
-              </h3>
-              
-              <p className="text-sm sm:text-base text-gray-600 text-center leading-relaxed">
-                {service.description}
+              {/* Descripción */}
+              <p className="text-gray-600 text-center leading-relaxed mb-8 text-lg">
+                {category.description}
               </p>
               
-              {/* Hover effect */}
-              <div className="mt-3 sm:mt-4 text-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="w-12 h-0.5 bg-gradient-to-r from-primary-blue to-primary-pink mx-auto"></div>
+              {/* Lista de características */}
+              <div className="space-y-4 mb-8">
+                {category.features.map((feature, featureIndex) => (
+                  <div key={featureIndex} className="flex items-start space-x-3">
+                    <div className={`w-2 h-2 rounded-full bg-gradient-to-r ${category.gradient} mt-2 flex-shrink-0`}></div>
+                    <span className="text-gray-700 leading-relaxed">{feature}</span>
+                  </div>
+                ))}
+              </div>
+              
+              {/* Acción específica por categoría */}
+              <div className="text-center">
+                <button className={`px-6 py-3 bg-gradient-to-r ${category.gradient} text-white font-semibold rounded-xl hover:shadow-lg transition-all duration-300 transform hover:scale-105`}>
+                  {category.title === "Redes Sociales" && "Ver Portfolio"}
+                  {category.title === "Web & E-commerce" && "Ver Proyectos"}
+                  {category.title === "Marketing Digital" && "Solicitar Auditoría"}
+                </button>
               </div>
             </div>
           ))}

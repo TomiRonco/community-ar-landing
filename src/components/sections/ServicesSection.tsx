@@ -44,11 +44,11 @@ export default function ServicesSection() {
   ];
 
   return (
-    <section id="servicios" className="py-8 sm:py-12 lg:py-16 bg-gradient-to-br from-primary-blue/5 via-white to-primary-pink/5">
+    <section id="servicios" className="py-6 sm:py-8 lg:py-12 bg-gradient-to-br from-primary-blue/5 via-white to-primary-pink/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
-        <div className="text-center mb-8 sm:mb-12">
+        <div className="text-center mb-6 sm:mb-8">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight">
             <span className="text-gray-900">Transformá Tu Negocio y </span>
             <span className="bg-gradient-to-r from-primary-blue to-primary-pink bg-clip-text text-transparent block">

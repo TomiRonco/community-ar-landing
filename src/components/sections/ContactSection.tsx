@@ -2,11 +2,11 @@
 
 export default function ContactSection() {
   return (
-    <section id="contacto" className="py-8 sm:py-12 lg:py-16 bg-gradient-to-br from-primary-yellow/5 via-white to-primary-light-pink/5">
+    <section id="contacto" className="py-6 sm:py-8 lg:py-12 bg-gradient-to-br from-primary-yellow/5 via-white to-primary-light-pink/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
-        <div className="text-center mb-8 sm:mb-12">
+        <div className="text-center mb-6 sm:mb-8">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6">
             <span className="text-gray-900">¿Listo para Transformar </span>
             <span className="bg-gradient-to-r from-primary-pink to-primary-blue bg-clip-text text-transparent block">

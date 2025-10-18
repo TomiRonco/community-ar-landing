@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
+import { getAssetPath } from '@/utils/paths';
 
 const navItems = [
   { href: '#inicio', label: 'Inicio' },
@@ -49,7 +50,7 @@ export default function Navbar() {
           <div className="flex items-center space-x-3">
             <div className="w-10 h-10 rounded-lg overflow-hidden">
               <Image
-                src="/assets/cmar.jpg"
+                src={getAssetPath("/assets/cmar.jpg")}
                 alt="Community AR Logo"
                 width={40}
                 height={40}

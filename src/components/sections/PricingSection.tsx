@@ -4,7 +4,7 @@ export default function PricingSection() {
   const plans = [
     {
       name: "Básico",
-      idealFor: "Emprendedores que están iniciando",
+      idealFor: "Emprendedore            👉 Quiero Transformar Mi Negocio que están iniciando",
       includes: "1-2 redes, contenido mensual, diseños básicos",
       emoji: "🌱",
       gradient: "from-primary-blue to-primary-pink"
@@ -121,8 +121,8 @@ export default function PricingSection() {
         {/* Mensaje final y CTA */}
         <div className="text-center bg-gradient-to-br from-primary-light-pink/20 to-primary-yellow/20 rounded-3xl p-8 max-w-4xl mx-auto">
           <p className="text-lg sm:text-xl text-gray-700 mb-6 leading-relaxed">
-            <span className="font-semibold">Todos los planes son personalizables.</span> <br />
-            Consultá por WhatsApp y armemos algo ideal para vos.
+            <span className="font-semibold">Imaginá tener la tranquilidad de saber que tu negocio crece mientras vos te enfocás en lo que mejor sabés hacer.</span> <br />
+            Charlemos por WhatsApp y diseñemos el plan perfecto para que <strong>conseguís más clientes</strong> y <strong>transformés tu marca</strong>.
           </p>
           
           <a

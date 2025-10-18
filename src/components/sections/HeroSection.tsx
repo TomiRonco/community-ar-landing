@@ -29,9 +29,8 @@ export default function HeroSection() {
             
             {/* Subtítulo */}
             <p className="text-lg sm:text-xl text-gray-600 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-              Impulsamos tu marca con estrategias de <strong className="text-primary-blue">Community Management</strong>, 
-              <strong className="text-primary-pink"> Desarrollo Web</strong> y <strong className="text-primary-blue">Marketing Digital</strong>{' '}
-              que generan resultados reales.
+              <strong className="text-primary-blue">Conseguí más clientes</strong>, <strong className="text-primary-pink">ahorrá tiempo</strong> y 
+              <strong className="text-primary-blue"> transformá tu marca</strong> con estrategias que realmente funcionan y generan resultados que podés ver.
             </p>
             
             {/* Beneficios Clave */}
@@ -42,7 +41,7 @@ export default function HeroSection() {
                 </div>
                 <div>
                   <div className="font-bold text-gray-900 text-sm sm:text-base">+300%</div>
-                  <div className="text-xs sm:text-sm text-gray-600">Crecimiento promedio</div>
+                  <div className="text-xs sm:text-sm text-gray-600">Más clientes conseguidos</div>
                 </div>
               </div>
               
@@ -51,8 +50,8 @@ export default function HeroSection() {
                   <span className="text-white text-sm sm:text-lg">⚡</span>
                 </div>
                 <div>
-                  <div className="font-bold text-gray-900 text-sm sm:text-base">24h</div>
-                  <div className="text-xs sm:text-sm text-gray-600">Tiempo de respuesta</div>
+                  <div className="font-bold text-gray-900 text-sm sm:text-base">20hs</div>
+                  <div className="text-xs sm:text-sm text-gray-600">Tiempo ahorrado semanal</div>
                 </div>
               </div>
               
@@ -62,7 +61,7 @@ export default function HeroSection() {
                 </div>
                 <div>
                   <div className="font-bold text-gray-900 text-sm sm:text-base">100%</div>
-                  <div className="text-xs sm:text-sm text-gray-600">Estrategias personalizadas</div>
+                  <div className="text-xs sm:text-sm text-gray-600">Marcas transformadas</div>
                 </div>
               </div>
             </div>

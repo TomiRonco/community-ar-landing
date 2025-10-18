@@ -6,12 +6,12 @@ export default function ServicesSection() {
       icon: "📱",
       title: "Redes Sociales",
       subtitle: "Community Management",
-      description: "Construimos y gestionamos tu presencia en redes sociales para conectar auténticamente con tu audiencia.",
+      description: "Conseguí más clientes y transformá tu marca en una comunidad fiel que te recomienda todos los días.",
       features: [
-        "Gestión completa de perfiles",
-        "Creación de contenido visual y copywriting",
-        "Estrategias de engagement y crecimiento",
-        "Análisis de métricas y reportes"
+        "Ahorrá 20 horas semanales gestionando tus redes",
+        "Atraé clientes ideales con contenido que convierte",
+        "Generá engagement auténtico que se traduce en ventas",
+        "Conocé exactamente qué funciona con reportes claros"
       ],
       gradient: "from-primary-blue to-primary-pink"
     },
@@ -19,12 +19,12 @@ export default function ServicesSection() {
       icon: "🌐",
       title: "Web & E-commerce",
       subtitle: "Desarrollo Digital",
-      description: "Desarrollamos sitios web y tiendas online que convierten visitantes en clientes fieles.",
+      description: "Vendé más y automatizá tu negocio con sitios que convierten visitantes en clientes felices las 24 horas.",
       features: [
-        "Landing pages optimizadas para conversión",
-        "Tiendas online con pasarelas de pago",
-        "Aplicaciones web y sistemas SaaS",
-        "Optimización SEO y performance"
+        "Conseguí más leads con páginas que convencen y venden",
+        "Vendé mientras dormís con tu tienda online optimizada",
+        "Ahorrá tiempo con sistemas que automatizan tu negocio",
+        "Aparecé primero en Google y superá a tu competencia"
       ],
       gradient: "from-primary-pink to-primary-yellow"
     },
@@ -32,12 +32,12 @@ export default function ServicesSection() {
       icon: "📈",
       title: "Marketing Digital",
       subtitle: "Estrategia & Crecimiento",
-      description: "Implementamos estrategias de marketing digital data-driven que generan ROI medible.",
+      description: "Multiplicá tus ventas con estrategias que te traen clientes de calidad y resultados que podés medir.",
       features: [
-        "Campañas publicitarias en Google y Meta",
-        "Email marketing y automatización",
-        "SEO y posicionamiento orgánico", 
-        "Consultoría y auditorías digitales"
+        "Conseguí clientes de calidad con campañas que funcionan",
+        "Ahorrá dinero invirtiendo solo en lo que trae resultados",
+        "Transformá tu marca en referente de tu industria",
+        "Tomá decisiones inteligentes con datos reales de tu negocio"
       ],
       gradient: "from-primary-yellow to-primary-blue"
     }
@@ -50,15 +50,15 @@ export default function ServicesSection() {
         {/* Header */}
         <div className="text-center mb-8 sm:mb-12">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6">
-            <span className="text-gray-900">Soluciones Completas para </span>
+            <span className="text-gray-900">Transformá Tu Negocio y </span>
             <span className="bg-gradient-to-r from-primary-blue to-primary-pink bg-clip-text text-transparent block">
-              Tu Éxito Digital
+              Conseguí Más Clientes
             </span>
           </h2>
           
           <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-4">
-            Desde estrategias de redes sociales hasta desarrollo web avanzado, 
-            ofrecemos todo lo que necesitas para destacar en el mundo digital.
+            Imaginá tener más clientes, ahorrar tiempo y ver crecer tu negocio mientras nosotros 
+            nos encargamos de toda tu presencia digital.
           </p>
         </div>
 

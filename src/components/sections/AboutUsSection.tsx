@@ -32,15 +32,15 @@ export default function AboutUsSection() {
         {/* Header */}
         <div className="text-center mb-8 sm:mb-12">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6">
-            <span className="text-gray-900">Profesionales Apasionados por </span>
+            <span className="text-gray-900">El Equipo que va a </span>
             <span className="bg-gradient-to-r from-primary-pink to-primary-blue bg-clip-text text-transparent block">
-              Tu Éxito Digital
+              Transformar Tu Negocio
             </span>
           </h2>
           
           <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-4">
-            Desde Alcorta, Santa Fe, combinamos creatividad, estrategia y tecnología 
-            para crear experiencias digitales que generan resultados reales.
+            Desde Alcorta, Santa Fe, nos especializamos en hacer que negocios como el tuyo 
+            consigan más clientes, ahorren tiempo y multipliquen sus ventas.
           </p>
         </div>
 
@@ -58,13 +58,12 @@ export default function AboutUsSection() {
                   </span>
                 </h3>
                 <p className="text-base sm:text-lg text-gray-600 leading-relaxed mb-4 sm:mb-6">
-                  Ayudamos a marcas y emprendedores a destacar en el mundo digital con soluciones 
-                  integrales que van desde la gestión de redes sociales hasta el desarrollo de 
-                  plataformas web avanzadas.
+                  Imaginá tener un equipo que entiende tu negocio y trabaja para que <strong>conseguís más clientes</strong>, 
+                  <strong> ahorrés tiempo</strong> y <strong>transformés tu marca</strong> en referente de tu industria.
                 </p>
                 <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
-                  Nuestro enfoque se basa en entender profundamente tu negocio para crear 
-                  estrategias digitales que conecten auténticamente con tu audiencia.
+                  Cada estrategia que creamos está pensada para que veas resultados reales: más ventas, 
+                  mejor reconocimiento de marca y menos tiempo perdido en tareas que no generan retorno.
                 </p>
               </div>
               
@@ -72,11 +71,11 @@ export default function AboutUsSection() {
               <div className="grid grid-cols-2 gap-4 sm:gap-6">
                 <div className="text-center bg-gradient-to-br from-primary-blue/10 to-transparent p-4 sm:p-6 rounded-2xl">
                   <div className="text-2xl sm:text-3xl font-bold text-primary-blue mb-1 sm:mb-2">Más de 40</div>
-                  <div className="text-sm sm:text-base text-gray-600">Clientes Satisfechos</div>
+                  <div className="text-sm sm:text-base text-gray-600">Negocios Transformados</div>
                 </div>
                 <div className="text-center bg-gradient-to-br from-primary-pink/10 to-transparent p-4 sm:p-6 rounded-2xl">
                   <div className="text-2xl sm:text-3xl font-bold text-primary-pink mb-1 sm:mb-2">3+</div>
-                  <div className="text-sm sm:text-base text-gray-600">Años de Experiencia</div>
+                  <div className="text-sm sm:text-base text-gray-600">Años Generando Resultados</div>
                 </div>
                 <div className="text-center bg-gradient-to-br from-primary-yellow/10 to-transparent p-6 rounded-2xl">
                   <div className="text-3xl font-bold text-primary-blue mb-2">24h</div>

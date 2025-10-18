@@ -61,7 +61,7 @@ export default function Navbar() {
           </div>
 
           {/* Enlaces desktop */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
             {navItems.map((item) => {
               const isActive = activeSection === item.href.substring(1);
               return (
@@ -82,6 +82,18 @@ export default function Navbar() {
                 </a>
               );
             })}
+            
+            {/* Botón sticky principal de WhatsApp */}
+            <a
+              href="https://wa.me/5493465486960?text=Hola! Quiero una consulta gratuita para mi negocio"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gradient-to-r from-primary-blue to-primary-pink text-white px-4 lg:px-6 py-2 rounded-full hover:from-primary-pink hover:to-primary-blue transition-all duration-300 font-semibold text-sm lg:text-base shadow-lg hover:shadow-xl transform hover:scale-105 flex items-center space-x-2"
+            >
+              <span>💬</span>
+              <span className="hidden lg:inline">Consulta Gratuita</span>
+              <span className="lg:hidden">Consulta</span>
+            </a>
           </div>
 
           {/* Botón mobile */}

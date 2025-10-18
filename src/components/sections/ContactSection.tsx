@@ -88,12 +88,12 @@ export default function ContactSection() {
                 
                 <div className="space-y-4 mb-8">
                   <a
-                    href="https://wa.me/5493465486960?text=Hola! Me interesa una consulta gratuita sobre mis redes sociales"
+                    href="https://wa.me/5493465486960?text=Hola! Me gustaria ver ejemplos de trabajos realizados"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="w-full block bg-gradient-to-r from-primary-blue to-primary-pink text-white font-semibold py-4 px-6 rounded-xl text-center transition-all duration-300 hover:from-primary-pink hover:to-primary-blue shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-lg"
                   >
-                    � Consulta Gratuita por WhatsApp
+                    🎨 ¿Querés que te muestre ejemplos?
                   </a>
                   
                   <a

@@ -1,0 +1,133 @@
+'use client';
+
+export default function ContactSection() {
+  return (
+    <section id="contacto" className="py-12 bg-gradient-to-br from-primary-yellow/5 via-white to-primary-light-pink/5">
+      <div className="max-w-7xl mx-auto px-4">
+        
+        {/* Header */}
+        <div className="text-center mb-12">
+          <h2 className="text-4xl lg:text-5xl font-bold mb-6">
+            <span className="text-gray-900">¿Listo para Transformar </span>
+            <span className="bg-gradient-to-r from-primary-pink to-primary-blue bg-clip-text text-transparent block">
+              Tu Presencia Digital?
+            </span>
+          </h2>
+          
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            Estamos ubicados en Alcorta, Santa Fe, pero trabajamos con clientes de toda Argentina. 
+            <strong className="text-primary-blue"> ¡Empezá tu transformación digital hoy!</strong>
+          </p>
+        </div>
+
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          
+          {/* Información de contacto */}
+          <div className="space-y-8">
+            <div className="space-y-6">
+              <div className="group flex items-center p-6 bg-white/80 backdrop-blur-sm rounded-2xl border border-primary-light-pink/20 hover:shadow-xl transition-all duration-300 hover:border-primary-blue/30">
+                <div className="w-16 h-16 bg-gradient-to-br from-primary-light-pink to-primary-blue rounded-2xl flex items-center justify-center mr-6 group-hover:scale-110 transition-transform duration-300">
+                  <span className="text-xl text-white">📍</span>
+                </div>
+                <div>
+                  <h4 className="text-xl font-bold mb-2 text-gray-900 group-hover:text-primary-blue transition-colors">Ubicación</h4>
+                  <p className="text-gray-600 text-lg">Alcorta, Santa Fe, Argentina</p>
+                </div>
+              </div>
+              
+              <div className="group flex items-center p-6 bg-white/80 backdrop-blur-sm rounded-2xl border border-primary-light-pink/20 hover:shadow-xl transition-all duration-300 hover:border-primary-pink/30">
+                <div className="w-16 h-16 bg-gradient-to-br from-primary-blue to-primary-pink rounded-2xl flex items-center justify-center mr-6 group-hover:scale-110 transition-transform duration-300">
+                  <span className="text-xl text-white">💬</span>
+                </div>
+                <div>
+                  <h4 className="text-xl font-bold mb-2 text-gray-900 group-hover:text-primary-pink transition-colors">WhatsApp</h4>
+                  <a 
+                    href="https://wa.me/5493465486960" 
+                    className="text-primary-blue hover:text-primary-pink transition-colors font-semibold text-lg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    +54 9 3465 486960
+                  </a>
+                </div>
+              </div>
+              
+              <div className="group flex items-center p-6 bg-white/80 backdrop-blur-sm rounded-2xl border border-primary-light-pink/20 hover:shadow-xl transition-all duration-300 hover:border-primary-pink/30">
+                <div className="w-16 h-16 bg-gradient-to-br from-primary-pink to-primary-yellow rounded-2xl flex items-center justify-center mr-6 group-hover:scale-110 transition-transform duration-300">
+                  <span className="text-xl text-white">📸</span>
+                </div>
+                <div>
+                  <h4 className="text-xl font-bold mb-2 text-gray-900 group-hover:text-primary-pink transition-colors">Instagram</h4>
+                  <a 
+                    href="https://instagram.com/communityar_" 
+                    className="text-primary-pink hover:text-primary-blue transition-colors font-semibold text-lg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    @communityar_
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Call to action */}
+          <div className="relative">
+            <div className="absolute inset-0 bg-gradient-to-br from-primary-pink/10 to-primary-blue/10 rounded-3xl transform rotate-3"></div>
+            <div className="relative bg-white/90 backdrop-blur-sm rounded-3xl p-8 lg:p-12 border border-primary-light-pink/20 shadow-2xl">
+              <div className="text-center">
+                <h3 className="text-3xl font-bold mb-6">
+                  <span className="bg-gradient-to-r from-primary-pink to-primary-blue bg-clip-text text-transparent">
+                    ¡Empezá Hoy Mismo!
+                  </span>
+                </h3>
+                <p className="text-gray-600 text-lg mb-8 leading-relaxed">
+                  Contanos sobre tu proyecto y recibí una <strong className="text-primary-blue">consulta gratuita personalizada</strong>. 
+                  Te ayudamos a diseñar la estrategia perfecta para tu negocio.
+                </p>
+                
+                <div className="space-y-4 mb-8">
+                  <a
+                    href="https://wa.me/5493465486960?text=Hola! Me interesa una consulta gratuita sobre mis redes sociales"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full block bg-gradient-to-r from-primary-blue to-primary-pink text-white font-semibold py-4 px-6 rounded-xl text-center transition-all duration-300 hover:from-primary-pink hover:to-primary-blue shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-lg"
+                  >
+                    � Consulta Gratuita por WhatsApp
+                  </a>
+                  
+                  <a
+                    href="https://instagram.com/communityar_"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full block bg-gradient-to-r from-primary-pink to-primary-yellow text-white font-semibold py-4 px-6 rounded-xl text-center transition-all duration-300 hover:from-primary-yellow hover:to-primary-pink shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-lg"
+                  >
+                    📸 Seguinos en Instagram
+                  </a>
+                </div>
+                
+                {/* Trust indicators */}
+                <div className="pt-6 border-t border-primary-light-pink/30">
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm">
+                    <div className="flex items-center justify-center space-x-2 text-gray-500">
+                      <span className="text-primary-blue text-lg">⚡</span>
+                      <span>Respuesta en 2h</span>
+                    </div>
+                    <div className="flex items-center justify-center space-x-2 text-gray-500">
+                      <span className="text-primary-pink text-lg">🎯</span>
+                      <span>Consulta gratuita</span>
+                    </div>
+                    <div className="flex items-center justify-center space-x-2 text-gray-500">
+                      <span className="text-primary-blue text-lg">🤝</span>
+                      <span>Sin compromiso</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

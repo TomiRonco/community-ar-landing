@@ -53,6 +53,12 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
+  alternates: {
+    canonical: 'https://community-ar-landing.vercel.app',
+  },
+  other: {
+    'google-site-verification': 'your-google-verification-code',
+  },
 };
 
 export default function RootLayout({

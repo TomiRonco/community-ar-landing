@@ -1,0 +1,30 @@
+User-agent: *
+Allow: /
+
+# Permitir todos los recursos importantes
+Allow: /assets/
+Allow: /_next/static/
+Allow: /_next/image/
+
+# Bloquear archivos no necesarios para SEO
+Disallow: /_next/
+Disallow: /api/
+Disallow: *.json$
+
+# Sitemap location
+Sitemap: https://community-ar-landing.vercel.app/sitemap.xml
+
+# Tiempo de rastreo (opcional)
+Crawl-delay: 1
+
+# Configuración específica para motores de búsqueda principales
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: facebookexternalhit
+Allow: /

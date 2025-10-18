@@ -22,6 +22,9 @@ export default function HeroSection() {
               <span className="bg-gradient-to-r from-primary-blue to-primary-pink bg-clip-text text-transparent block">
                 Presencia Digital
               </span>
+              <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-gray-700 block mt-2">
+                para que atraigas más clientes
+              </span>
             </h1>
             
             {/* Subtítulo */}

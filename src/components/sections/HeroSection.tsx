@@ -116,6 +116,8 @@ export default function HeroSection() {
                     width={96}
                     height={96}
                     className="w-full h-full object-cover"
+                    priority
+                    quality={85}
                   />
                 </div>
                 <h3 className="text-xl sm:text-2xl font-bold">

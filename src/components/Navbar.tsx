@@ -55,6 +55,8 @@ export default function Navbar() {
                 width={40}
                 height={40}
                 className="w-full h-full object-cover"
+                priority
+                quality={80}
               />
             </div>
             <span className="text-lg sm:text-xl font-bold text-gray-900">Community AR</span>

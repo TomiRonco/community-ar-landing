@@ -30,6 +30,8 @@ jobs:
       
     - name: Build project 🏗️
       run: npm run build
+      env:
+        STATIC_EXPORT: true
       
     - name: Setup Pages 🔧
       uses: actions/configure-pages@v4

@@ -9,7 +9,63 @@ export const APP_CONFIG = {
     phone: "+54 9 3465 486960",
     whatsapp: "https://wa.me/5493465486960",
     instagram: "@communityar_",
-    instagramUrl: "https://instagram.com/communityar_"
+    instagramUrl: "https://instagram.com/communityar_",
+    address: {
+      street: "Alcorta",
+      city: "Alcorta",
+      state: "Santa Fe",
+      zipCode: "2467",
+      country: "Argentina",
+      full: "Alcorta, Santa Fe 2467, Argentina"
+    },
+    coordinates: {
+      lat: -33.0561,
+      lng: -61.1137
+    },
+    serviceArea: [
+      "Alcorta",
+      "Santa Fe", 
+      "Rosario",
+      "Villa Constitución",
+      "Casilda",
+      "Venado Tuerto",
+      "Argentina"
+    ]
+  },
+  
+  // SEO y palabras clave
+  seo: {
+    keywords: {
+      primary: [
+        "community management Santa Fe",
+        "desarrollo web Santa Fe", 
+        "marketing digital Argentina",
+        "gestión redes sociales Alcorta"
+      ],
+      secondary: [
+        "community manager profesional Santa Fe",
+        "diseño web Santa Fe Argentina",
+        "publicidad digital Santa Fe",
+        "redes sociales empresas Argentina",
+        "marketing digital Rosario",
+        "community management Venado Tuerto"
+      ],
+      longTail: [
+        "community manager para empresas en Santa Fe",
+        "agencia marketing digital Santa Fe Argentina",
+        "diseño de páginas web en Santa Fe",
+        "gestión de redes sociales para negocios Santa Fe"
+      ]
+    },
+    locations: [
+      "Santa Fe",
+      "Alcorta", 
+      "Rosario",
+      "Villa Constitución",
+      "Casilda",
+      "Venado Tuerto",
+      "Argentina"
+    ]
   },
   
   // URLs y enlaces

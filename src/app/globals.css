@@ -33,7 +33,19 @@ body {
 /* Optimización de fuentes para móviles */
 @media (max-width: 640px) {
   html {
-    font-size: 14px;
+    font-size: 16px; /* Mejorado de 14px para mejor legibilidad */
+  }
+  
+  /* Asegurar que los botones sean fáciles de tocar */
+  button, a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Mejorar el espaciado en móviles */
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
@@ -62,6 +74,32 @@ body {
   
   html {
     scroll-behavior: auto;
+  }
+}
+
+/* Mobile-specific optimizations */
+@media (max-width: 768px) {
+  /* Prevent zoom on input focus */
+  input, select, textarea {
+    font-size: 16px !important;
+  }
+  
+  /* Improve touch targets */
+  .btn, button, [role="button"], a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Better spacing for mobile */
+  section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  /* Optimize images for mobile */
+  img {
+    max-width: 100%;
+    height: auto;
   }
 }
 

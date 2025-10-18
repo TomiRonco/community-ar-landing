@@ -72,14 +72,14 @@ export default function HeroSection() {
                 href="https://wa.me/5493465486960?text=Hola! Quiero una consulta gratuita para mi negocio"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-primary-blue to-primary-pink text-white rounded-xl hover:from-primary-pink hover:to-primary-blue transition-all duration-300 font-semibold text-base sm:text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-center"
+                className="w-full sm:w-auto px-6 sm:px-8 py-4 sm:py-4 bg-gradient-to-r from-primary-blue to-primary-pink text-white rounded-xl hover:from-primary-pink hover:to-primary-blue transition-all duration-300 font-semibold text-base sm:text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-center min-h-[48px] flex items-center justify-center"
               >
                 🚀 Consulta Gratuita
               </a>
               
               <a
                 href="#servicios"
-                className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-white/80 backdrop-blur-sm border-2 border-primary-blue text-primary-blue rounded-xl hover:bg-primary-blue hover:text-white transition-all duration-300 font-semibold text-base sm:text-lg text-center"
+                className="w-full sm:w-auto px-6 sm:px-8 py-4 sm:py-4 bg-white/80 backdrop-blur-sm border-2 border-primary-blue text-primary-blue rounded-xl hover:bg-primary-blue hover:text-white transition-all duration-300 font-semibold text-base sm:text-lg text-center min-h-[48px] flex items-center justify-center"
               >
                 Ver Nuestros Servicios
               </a>

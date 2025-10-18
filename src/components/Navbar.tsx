@@ -90,7 +90,7 @@ export default function Navbar() {
               href="https://wa.me/5493465486960?text=Hola! Quiero una consulta gratuita para mi negocio"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-gradient-to-r from-primary-blue to-primary-pink text-white px-4 lg:px-6 py-2 rounded-full hover:from-primary-pink hover:to-primary-blue transition-all duration-300 font-semibold text-sm lg:text-base shadow-lg hover:shadow-xl transform hover:scale-105 flex items-center space-x-2"
+              className="bg-gradient-to-r from-primary-blue to-primary-pink text-white px-4 lg:px-6 py-3 rounded-full hover:from-primary-pink hover:to-primary-blue transition-all duration-300 font-semibold text-sm lg:text-base shadow-lg hover:shadow-xl transform hover:scale-105 flex items-center space-x-2 min-h-[44px]"
             >
               <span>💬</span>
               <span className="hidden lg:inline">Consulta Gratuita</span>

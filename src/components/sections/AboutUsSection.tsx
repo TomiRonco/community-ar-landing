@@ -31,14 +31,14 @@ export default function AboutUsSection() {
         
         {/* Header */}
         <div className="text-center mb-8 sm:mb-12">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 leading-tight">
             <span className="text-gray-900">El Equipo que va a </span>
             <span className="bg-gradient-to-r from-primary-pink to-primary-blue bg-clip-text text-transparent block">
               Transformar Tu Negocio
             </span>
           </h2>
           
-          <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-4">
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-4">
             Desde Alcorta, Santa Fe, nos especializamos en hacer que negocios como el tuyo 
             consigan más clientes, ahorren tiempo y multipliquen sus ventas.
           </p>

@@ -1,30 +1,47 @@
 'use client';
 
+import { useState } from 'react';
+
 export default function PricingSection() {
+  const [expandedPlans, setExpandedPlans] = useState<{[key: number]: boolean}>({});
+
+  const togglePlan = (index: number) => {
+    setExpandedPlans(prev => ({
+      ...prev,
+      [index]: !prev[index]
+    }));
+  };
+
   const plans = [
     {
       name: "Plan Básico",
       description: "Perfecto para emprendedores y pequeños negocios",
       emoji: "🌱",
-      features: [
+      basicFeatures: [
         "Gestión de 2 redes sociales",
         "8 publicaciones por mes",
-        "Diseños básicos incluidos",
+        "Diseños básicos incluidos"
+      ],
+      extendedFeatures: [
         "Respuesta a comentarios",
-        "Reporte mensual básico"
+        "Reporte mensual básico",
+        "Horarios de publicación optimizados"
       ]
     },
     {
       name: "Plan Profesional",
       description: "Ideal para empresas en crecimiento",
       emoji: "🚀",
-      features: [
+      basicFeatures: [
         "Gestión de 4 redes sociales",
         "15 publicaciones por mes",
-        "Diseños premium personalizados",
+        "Diseños premium personalizados"
+      ],
+      extendedFeatures: [
         "Gestión completa de comunidad",
         "Estrategia de contenido",
-        "Análisis detallado mensual"
+        "Análisis detallado mensual",
+        "Stories y reels incluidos"
       ],
       popular: true
     },
@@ -32,13 +49,16 @@ export default function PricingSection() {
       name: "Plan Enterprise",
       description: "Para empresas que buscan máximo impacto",
       emoji: "👑",
-      features: [
+      basicFeatures: [
         "Gestión ilimitada de redes",
         "Contenido diario personalizado",
-        "Campañas publicitarias",
+        "Campañas publicitarias"
+      ],
+      extendedFeatures: [
         "Community manager dedicado",
         "Reportes semanales avanzados",
-        "Consultoría estratégica mensual"
+        "Consultoría estratégica mensual",
+        "Atención prioritaria 24/7"
       ]
     }
   ];
@@ -50,9 +70,9 @@ export default function PricingSection() {
         {/* Header */}
         <div className="text-center mb-8 sm:mb-12">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6">
-            <span className="text-gray-900">Encuentra el Plan Perfecto </span>
+            <span className="text-gray-900">Planes Flexibles </span>
             <span className="bg-gradient-to-r from-primary-blue to-primary-pink bg-clip-text text-transparent block">
-              Para Tu Negocio
+              Adaptados a Vos
             </span>
           </h2>
           
@@ -89,8 +109,9 @@ export default function PricingSection() {
                 <p className="text-gray-600 mb-6 leading-relaxed">{plan.description}</p>
                 
                 {/* Features */}
-                <ul className="text-left space-y-3 mb-8">
-                  {plan.features.map((feature, featureIndex) => (
+                <ul className="text-left space-y-3 mb-6">
+                  {/* Características básicas - siempre visibles */}
+                  {plan.basicFeatures.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-start">
                       <div className="w-5 h-5 bg-gradient-to-br from-primary-blue to-primary-pink rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
                         <span className="text-white text-xs">✓</span>
@@ -98,7 +119,35 @@ export default function PricingSection() {
                       <span className="text-gray-700 leading-relaxed">{feature}</span>
                     </li>
                   ))}
+                  
+                  {/* Características extendidas - expandibles */}
+                  <div className={`transition-all duration-300 overflow-hidden ${expandedPlans[index] ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
+                    {plan.extendedFeatures.map((feature, featureIndex) => (
+                      <li key={`extended-${featureIndex}`} className="flex items-start mt-3">
+                        <div className="w-5 h-5 bg-gradient-to-br from-primary-blue to-primary-pink rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
+                          <span className="text-white text-xs">✓</span>
+                        </div>
+                        <span className="text-gray-700 leading-relaxed">{feature}</span>
+                      </li>
+                    ))}
+                  </div>
                 </ul>
+                
+                {/* Botón Ver más/Ver menos */}
+                <button
+                  onClick={() => togglePlan(index)}
+                  className="text-primary-blue hover:text-primary-pink transition-colors duration-300 font-medium text-sm mb-6 flex items-center justify-center w-full"
+                >
+                  {expandedPlans[index] ? (
+                    <>
+                      Ver menos <span className="ml-1">↑</span>
+                    </>
+                  ) : (
+                    <>
+                      Ver más características <span className="ml-1">↓</span>
+                    </>
+                  )}
+                </button>
                 
                 {/* CTA */}
                 <a

@@ -1,6 +1,9 @@
 'use client';
 
 import Image from 'next/image';
+import { APP_CONFIG } from '@/config/constants';
+import { heroMetrics } from '@/data';
+import { cn, gradientPresets } from '@/utils/css';
 
 export default function HeroSection() {
   return (
@@ -13,63 +16,51 @@ export default function HeroSection() {
             
             {/* Badge de credibilidad */}
             <div className="inline-flex items-center px-3 sm:px-4 py-2 bg-gradient-to-r from-primary-blue/10 to-primary-pink/10 rounded-full border border-primary-blue/20">
-              <span className="text-sm sm:text-base text-primary-blue font-medium">🚀 Más de 40 Empresas Confían en Nosotros</span>
+              <span className="text-sm sm:text-base text-primary-blue font-medium">
+                {APP_CONFIG.messages.trustedBy}
+              </span>
             </div>
             
             {/* Título Principal */}
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-              Transformamos Tu 
+              {APP_CONFIG.messages.heroTitle.main} 
               <span className="bg-gradient-to-r from-primary-blue to-primary-pink bg-clip-text text-transparent block">
-                Presencia Digital
+                {APP_CONFIG.messages.heroTitle.highlight}
               </span>
               <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-gray-700 block mt-2">
-                para que atraigas más clientes
+                {APP_CONFIG.messages.heroTitle.subtitle}
               </span>
             </h1>
             
             {/* Subtítulo */}
             <p className="text-lg sm:text-xl text-gray-600 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-              <strong className="text-primary-blue">Conseguí más clientes</strong>, <strong className="text-primary-pink">ahorrá tiempo</strong> y 
-              <strong className="text-primary-blue"> transformá tu marca</strong> con estrategias que realmente funcionan y generan resultados que podés ver.
+              {APP_CONFIG.messages.heroDescription}
             </p>
             
             {/* Beneficios Clave */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-4">
-              <div className="flex items-center justify-center sm:justify-start space-x-3 bg-white/60 backdrop-blur-sm rounded-xl p-4 sm:p-4 border border-primary-light-pink/20 min-h-[80px]">
-                <div className="w-10 h-10 sm:w-10 sm:h-10 bg-gradient-to-br from-primary-blue to-primary-pink rounded-lg flex items-center justify-center flex-shrink-0">
-                  <span className="text-white text-lg sm:text-lg">📈</span>
+              {heroMetrics.map((metric, index) => (
+                <div key={index} className="flex items-center justify-center sm:justify-start space-x-3 bg-white/60 backdrop-blur-sm rounded-xl p-4 sm:p-4 border border-primary-light-pink/20 min-h-[80px]">
+                  <div className={cn(
+                    "w-10 h-10 sm:w-10 sm:h-10 rounded-lg flex items-center justify-center flex-shrink-0",
+                    index === 0 ? gradientPresets.bluePink :
+                    index === 1 ? gradientPresets.pinkYellow : 
+                    gradientPresets.yellowBlue
+                  )}>
+                    <span className="text-white text-lg sm:text-lg">{metric.icon}</span>
+                  </div>
+                  <div className="text-center sm:text-left">
+                    <div className="font-bold text-gray-900 text-lg sm:text-base">{metric.value}</div>
+                    <div className="text-sm sm:text-sm text-gray-600 leading-tight">{metric.label}</div>
+                  </div>
                 </div>
-                <div className="text-center sm:text-left">
-                  <div className="font-bold text-gray-900 text-lg sm:text-base">+300%</div>
-                  <div className="text-sm sm:text-sm text-gray-600 leading-tight">Más clientes conseguidos</div>
-                </div>
-              </div>
-              
-              <div className="flex items-center justify-center sm:justify-start space-x-3 bg-white/60 backdrop-blur-sm rounded-xl p-4 sm:p-4 border border-primary-light-pink/20 min-h-[80px]">
-                <div className="w-10 h-10 sm:w-10 sm:h-10 bg-gradient-to-br from-primary-pink to-primary-yellow rounded-lg flex items-center justify-center flex-shrink-0">
-                  <span className="text-white text-lg sm:text-lg">⚡</span>
-                </div>
-                <div className="text-center sm:text-left">
-                  <div className="font-bold text-gray-900 text-lg sm:text-base">20hs</div>
-                  <div className="text-sm sm:text-sm text-gray-600 leading-tight">Tiempo ahorrado semanal</div>
-                </div>
-              </div>
-              
-              <div className="flex items-center justify-center sm:justify-start space-x-3 bg-white/60 backdrop-blur-sm rounded-xl p-4 sm:p-4 border border-primary-light-pink/20 min-h-[80px]">
-                <div className="w-10 h-10 sm:w-10 sm:h-10 bg-gradient-to-br from-primary-yellow to-primary-light-pink rounded-lg flex items-center justify-center flex-shrink-0">
-                  <span className="text-gray-900 text-lg sm:text-lg">🎯</span>
-                </div>
-                <div className="text-center sm:text-left">
-                  <div className="font-bold text-gray-900 text-lg sm:text-base">100%</div>
-                  <div className="text-sm sm:text-sm text-gray-600 leading-tight">Marcas transformadas</div>
-                </div>
-              </div>
+              ))}
             </div>
             
             {/* Botones de Acción */}
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <a
-                href="https://wa.me/5493465486960?text=Hola! Quiero una consulta gratuita para mi negocio"
+                href={APP_CONFIG.urls.whatsappContact}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto px-6 sm:px-8 py-4 sm:py-4 bg-gradient-to-r from-primary-blue to-primary-pink text-white rounded-xl hover:from-primary-pink hover:to-primary-blue transition-all duration-300 font-semibold text-base sm:text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-center min-h-[48px] flex items-center justify-center"
@@ -121,7 +112,7 @@ export default function HeroSection() {
                 </div>
                 <h3 className="text-xl sm:text-2xl font-bold">
                   <span className="bg-gradient-to-r from-primary-blue to-primary-pink bg-clip-text text-transparent">
-                    Community AR
+                    {APP_CONFIG.company.name}
                   </span>
                 </h3>
                 <p className="text-gray-600">Tu Partner Digital de Confianza</p>
@@ -154,7 +145,7 @@ export default function HeroSection() {
               {/* CTA secundario */}
               <div className="mt-8 text-center">
                 <a
-                  href="https://instagram.com/communityar_"
+                  href={APP_CONFIG.urls.instagram}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center space-x-2 text-primary-pink hover:text-primary-blue transition-colors"

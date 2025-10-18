@@ -1,6 +1,6 @@
 'use client';
 
-export default function Footer() {
+export default function FooterSection() {
   const currentYear = new Date().getFullYear();
 
   return (

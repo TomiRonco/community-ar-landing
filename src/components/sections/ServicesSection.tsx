@@ -63,11 +63,11 @@ export default function ServicesSection() {
         </div>
 
         {/* Grid de categorías de servicios */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-12 items-stretch">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-12 items-start">
           {serviceCategories.map((category, index) => (
             <div
               key={index}
-              className="group bg-white/90 backdrop-blur-sm rounded-2xl sm:rounded-3xl p-6 sm:p-8 hover:shadow-2xl transition-all duration-500 border border-primary-light-pink/20 hover:border-primary-blue/30 transform hover:-translate-y-3 flex flex-col h-full"
+              className="group bg-white/90 backdrop-blur-sm rounded-2xl sm:rounded-3xl p-6 sm:p-8 hover:shadow-2xl transition-all duration-500 border border-primary-light-pink/20 hover:border-primary-blue/30 transform hover:-translate-y-3 flex flex-col h-auto"
             >
               {/* Header del bloque */}
               <div className="text-center mb-6 sm:mb-8">

@@ -96,15 +96,15 @@ export default function AboutUsSection() {
             <div key={index} className="group bg-white/80 backdrop-blur-sm rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-primary-light-pink/20 hover:border-primary-pink/30 transform hover:-translate-y-2">
               
               {/* Instagram Embed */}
-              <div className="relative bg-white min-h-[500px]">
+              <div className="relative bg-white overflow-hidden">
                 <iframe 
                   src={`https://www.instagram.com/p/${member.embedCode}/embed/`}
                   width="100%" 
-                  height="500"
+                  height="650"
                   frameBorder="0" 
                   scrolling="no" 
                   allowTransparency={true}
-                  className="border-0"
+                  className="border-0 w-full"
                   title={`Instagram post de ${member.name}`}
                 />
               </div>

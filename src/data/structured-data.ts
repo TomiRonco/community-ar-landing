@@ -32,6 +32,38 @@ export const localBusinessStructuredData = {
       }
     },
     {
+      "@type": "City",
+      "name": "Rosario",
+      "containedInPlace": {
+        "@type": "State", 
+        "name": "Santa Fe"
+      }
+    },
+    {
+      "@type": "City",
+      "name": "Villa Constitución",
+      "containedInPlace": {
+        "@type": "State",
+        "name": "Santa Fe"
+      }
+    },
+    {
+      "@type": "City",
+      "name": "Casilda", 
+      "containedInPlace": {
+        "@type": "State",
+        "name": "Santa Fe"
+      }
+    },
+    {
+      "@type": "City",
+      "name": "Venado Tuerto",
+      "containedInPlace": {
+        "@type": "State",
+        "name": "Santa Fe"
+      }
+    },
+    {
       "@type": "State", 
       "name": "Santa Fe"
     },

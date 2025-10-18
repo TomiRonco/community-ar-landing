@@ -15,7 +15,15 @@ export const metadata: Metadata = {
     "community manager profesional",
     "diseño web Santa Fe Argentina",
     "publicidad digital Santa Fe",
-    "redes sociales empresas Argentina"
+    "redes sociales empresas Argentina",
+    "marketing digital Rosario",
+    "community management Venado Tuerto",
+    "desarrollo web Villa Constitución",
+    "agencia marketing digital Santa Fe",
+    "diseño páginas web Alcorta",
+    "gestión redes sociales empresas Santa Fe",
+    "publicidad Facebook Instagram Santa Fe",
+    "community manager Casilda"
   ],
   authors: [{ name: "Community AR" }],
   creator: "Community AR",
@@ -59,6 +67,11 @@ export default function RootLayout({
         <meta name="geo.placename" content="Alcorta, Santa Fe, Argentina" />
         <meta name="geo.position" content="-33.0561;-61.1137" />
         <meta name="ICBM" content="-33.0561, -61.1137" />
+        <meta name="distribution" content="local" />
+        <meta name="coverage" content="Argentina" />
+        <meta name="target" content="Santa Fe, Argentina" />
+        <meta name="audience" content="empresas Santa Fe, emprendedores Argentina" />
+        <link rel="canonical" href="https://community-ar-landing.vercel.app/" />
       </head>
       <body className="antialiased">
         {children}

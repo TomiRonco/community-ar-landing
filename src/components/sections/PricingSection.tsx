@@ -1,65 +1,28 @@
 'use client';
 
-import { useState } from 'react';
-
 export default function PricingSection() {
-  const [expandedPlans, setExpandedPlans] = useState<{[key: number]: boolean}>({});
-
-  const togglePlan = (index: number) => {
-    setExpandedPlans(prev => ({
-      ...prev,
-      [index]: !prev[index]
-    }));
-  };
-
   const plans = [
     {
-      name: "Plan Básico",
-      description: "Perfecto para emprendedores y pequeños negocios",
+      name: "Básico",
+      idealFor: "Emprendedores que están iniciando",
+      includes: "1-2 redes, contenido mensual, diseños básicos",
       emoji: "🌱",
-      basicFeatures: [
-        "Gestión de 2 redes sociales",
-        "8 publicaciones por mes",
-        "Diseños básicos incluidos"
-      ],
-      extendedFeatures: [
-        "Respuesta a comentarios",
-        "Reporte mensual básico",
-        "Horarios de publicación optimizados"
-      ]
+      gradient: "from-primary-blue to-primary-pink"
     },
     {
-      name: "Plan Profesional",
-      description: "Ideal para empresas en crecimiento",
+      name: "Intermedio",
+      idealFor: "Negocios que quieren dar el salto",
+      includes: "+ redes, estrategia, comunidad, reportes",
       emoji: "🚀",
-      basicFeatures: [
-        "Gestión de 4 redes sociales",
-        "15 publicaciones por mes",
-        "Diseños premium personalizados"
-      ],
-      extendedFeatures: [
-        "Gestión completa de comunidad",
-        "Estrategia de contenido",
-        "Análisis detallado mensual",
-        "Stories y reels incluidos"
-      ],
+      gradient: "from-primary-pink to-primary-yellow",
       popular: true
     },
     {
-      name: "Plan Enterprise",
-      description: "Para empresas que buscan máximo impacto",
+      name: "Premium",
+      idealFor: "Empresas que quieren crecer con fuerza",
+      includes: "Gestión completa, campañas publicitarias, consultoría",
       emoji: "👑",
-      basicFeatures: [
-        "Gestión ilimitada de redes",
-        "Contenido diario personalizado",
-        "Campañas publicitarias"
-      ],
-      extendedFeatures: [
-        "Community manager dedicado",
-        "Reportes semanales avanzados",
-        "Consultoría estratégica mensual",
-        "Atención prioritaria 24/7"
-      ]
+      gradient: "from-primary-yellow to-primary-blue"
     }
   ];
 
@@ -70,101 +33,106 @@ export default function PricingSection() {
         {/* Header */}
         <div className="text-center mb-8 sm:mb-12">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6">
-            <span className="text-gray-900">Planes Flexibles </span>
+            <span className="text-gray-900">✨ Planes Flexibles </span>
             <span className="bg-gradient-to-r from-primary-blue to-primary-pink bg-clip-text text-transparent block">
-              Adaptados a Vos
+              para tu Negocio
             </span>
           </h2>
           
-          <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-4">
-            Cada negocio es único. Por eso ofrecemos soluciones flexibles que se adaptan 
-            perfectamente a tus objetivos y presupuesto.
-          </p>
+          <div className="text-lg sm:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed px-4 space-y-4">
+            <p>
+              Cada proyecto es distinto. Por eso ofrecemos planes modulables que podés adaptar según tus necesidades.
+            </p>
+            <p className="font-medium text-gray-700">
+              Elegí la base que mejor te represente y ajustamos juntos los detalles:
+            </p>
+          </div>
         </div>
 
-        {/* Grid de planes */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 mb-8 sm:mb-12">
-          {plans.map((plan, index) => (
-            <div
-              key={index}
-              className={`group bg-white/80 backdrop-blur-sm rounded-2xl p-6 sm:p-8 relative hover:shadow-2xl transition-all duration-500 border transform hover:-translate-y-2 ${
-                plan.popular 
-                  ? 'ring-2 ring-primary-pink border-primary-pink/30 bg-gradient-to-br from-primary-light-pink/20 to-white/80 scale-105' 
-                  : 'border-primary-light-pink/20 hover:border-primary-blue/30'
-              }`}
-            >
-              {plan.popular && (
-                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                  <span className="bg-gradient-to-r from-primary-pink to-primary-blue text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
-                    ⭐ Más Popular
-                  </span>
-                </div>
-              )}
-              
-              <div className="text-center">
-                <div className="w-20 h-20 bg-gradient-to-br from-primary-blue to-primary-pink rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <span className="text-white text-3xl">{plan.emoji}</span>
-                </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-3 group-hover:text-primary-blue transition-colors">{plan.name}</h3>
-                <p className="text-gray-600 mb-6 leading-relaxed">{plan.description}</p>
-                
-                {/* Features */}
-                <ul className="text-left space-y-3 mb-6">
-                  {/* Características básicas - siempre visibles */}
-                  {plan.basicFeatures.map((feature, featureIndex) => (
-                    <li key={featureIndex} className="flex items-start">
-                      <div className="w-5 h-5 bg-gradient-to-br from-primary-blue to-primary-pink rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
-                        <span className="text-white text-xs">✓</span>
-                      </div>
-                      <span className="text-gray-700 leading-relaxed">{feature}</span>
-                    </li>
-                  ))}
-                  
-                  {/* Características extendidas - expandibles */}
-                  <div className={`transition-all duration-300 overflow-hidden ${expandedPlans[index] ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
-                    {plan.extendedFeatures.map((feature, featureIndex) => (
-                      <li key={`extended-${featureIndex}`} className="flex items-start mt-3">
-                        <div className="w-5 h-5 bg-gradient-to-br from-primary-blue to-primary-pink rounded-full flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">
-                          <span className="text-white text-xs">✓</span>
-                        </div>
-                        <span className="text-gray-700 leading-relaxed">{feature}</span>
-                      </li>
-                    ))}
-                  </div>
-                </ul>
-                
-                {/* Botón Ver más/Ver menos */}
-                <button
-                  onClick={() => togglePlan(index)}
-                  className="text-primary-blue hover:text-primary-pink transition-colors duration-300 font-medium text-sm mb-6 flex items-center justify-center w-full"
-                >
-                  {expandedPlans[index] ? (
-                    <>
-                      Ver menos <span className="ml-1">↑</span>
-                    </>
-                  ) : (
-                    <>
-                      Ver más características <span className="ml-1">↓</span>
-                    </>
-                  )}
-                </button>
-                
-                {/* CTA */}
-                <a
-                  href="https://wa.me/5493465486960?text=Hola! Me interesa conocer más sobre el plan y precios"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`w-full inline-block px-6 py-4 rounded-xl font-semibold text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 ${
-                    plan.popular
-                      ? 'bg-gradient-to-r from-primary-pink to-primary-blue text-white hover:from-primary-blue hover:to-primary-pink'
-                      : 'bg-gradient-to-r from-primary-light-pink to-primary-yellow text-gray-900 hover:from-primary-yellow hover:to-primary-light-pink'
-                  }`}
-                >
-                  💬 Consultar por WhatsApp
-                </a>
-              </div>
+        {/* Tabla de planes */}
+        <div className="max-w-5xl mx-auto mb-8 sm:mb-12">
+          {/* Header de la tabla - Desktop */}
+          <div className="hidden md:grid md:grid-cols-3 gap-6 mb-6">
+            <div className="text-center">
+              <h3 className="text-xl font-bold text-primary-blue mb-2">Plan</h3>
             </div>
-          ))}
+            <div className="text-center">
+              <h3 className="text-xl font-bold text-primary-blue mb-2">Ideal para</h3>
+            </div>
+            <div className="text-center">
+              <h3 className="text-xl font-bold text-primary-blue mb-2">Incluye (ejemplos)</h3>
+            </div>
+          </div>
+          
+          {/* Filas de planes */}
+          <div className="space-y-4 md:space-y-6">
+            {plans.map((plan, index) => (
+              <div
+                key={index}
+                className={`bg-white/90 backdrop-blur-sm rounded-2xl p-6 md:p-8 border transition-all duration-300 hover:shadow-xl transform hover:-translate-y-1 ${
+                  plan.popular 
+                    ? 'ring-2 ring-primary-pink border-primary-pink/30 bg-gradient-to-br from-primary-light-pink/20 to-white/90' 
+                    : 'border-primary-light-pink/20 hover:border-primary-blue/30'
+                }`}
+              >
+                {plan.popular && (
+                  <div className="text-center mb-4">
+                    <span className="bg-gradient-to-r from-primary-pink to-primary-blue text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
+                      ⭐ Más Popular
+                    </span>
+                  </div>
+                )}
+                
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 items-center">
+                  {/* Plan */}
+                  <div className="text-center md:text-left">
+                    <div className="flex items-center justify-center md:justify-start mb-2">
+                      <div className={`w-12 h-12 bg-gradient-to-br ${plan.gradient} rounded-xl flex items-center justify-center mr-3`}>
+                        <span className="text-white text-xl">{plan.emoji}</span>
+                      </div>
+                      <h3 className="text-2xl font-bold text-gray-900">{plan.name}</h3>
+                    </div>
+                    <div className="md:hidden">
+                      <span className="text-sm font-semibold text-primary-blue">Plan</span>
+                    </div>
+                  </div>
+                  
+                  {/* Ideal para */}
+                  <div className="text-center md:text-left">
+                    <div className="md:hidden mb-1">
+                      <span className="text-sm font-semibold text-primary-blue">Ideal para:</span>
+                    </div>
+                    <p className="text-gray-700 leading-relaxed">{plan.idealFor}</p>
+                  </div>
+                  
+                  {/* Incluye */}
+                  <div className="text-center md:text-left">
+                    <div className="md:hidden mb-1">
+                      <span className="text-sm font-semibold text-primary-blue">Incluye:</span>
+                    </div>
+                    <p className="text-gray-700 leading-relaxed font-medium">{plan.includes}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Mensaje final y CTA */}
+        <div className="text-center bg-gradient-to-br from-primary-light-pink/20 to-primary-yellow/20 rounded-3xl p-8 max-w-4xl mx-auto">
+          <p className="text-lg sm:text-xl text-gray-700 mb-6 leading-relaxed">
+            <span className="font-semibold">Todos los planes son personalizables.</span> <br />
+            Consultá por WhatsApp y armemos algo ideal para vos.
+          </p>
+          
+          <a
+            href="https://wa.me/5493465486960?text=Hola! Me interesa conocer más sobre los planes y crear una propuesta personalizada para mi negocio"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-primary-blue to-primary-pink text-white font-semibold text-lg rounded-2xl hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+          >
+            � Solicitar Propuesta Personalizada
+          </a>
         </div>
       </div>
     </section>

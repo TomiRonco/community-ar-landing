@@ -34,34 +34,34 @@ export default function HeroSection() {
             </p>
             
             {/* Beneficios Clave */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
-              <div className="flex items-center space-x-3 bg-white/60 backdrop-blur-sm rounded-lg p-3 sm:p-4 border border-primary-light-pink/20">
-                <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-primary-blue to-primary-pink rounded-lg flex items-center justify-center">
-                  <span className="text-white text-sm sm:text-lg">📈</span>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-4">
+              <div className="flex items-center justify-center sm:justify-start space-x-3 bg-white/60 backdrop-blur-sm rounded-xl p-4 sm:p-4 border border-primary-light-pink/20 min-h-[80px]">
+                <div className="w-10 h-10 sm:w-10 sm:h-10 bg-gradient-to-br from-primary-blue to-primary-pink rounded-lg flex items-center justify-center flex-shrink-0">
+                  <span className="text-white text-lg sm:text-lg">📈</span>
                 </div>
-                <div>
-                  <div className="font-bold text-gray-900 text-sm sm:text-base">+300%</div>
-                  <div className="text-xs sm:text-sm text-gray-600">Más clientes conseguidos</div>
-                </div>
-              </div>
-              
-              <div className="flex items-center space-x-3 bg-white/60 backdrop-blur-sm rounded-lg p-3 sm:p-4 border border-primary-light-pink/20">
-                <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-primary-pink to-primary-yellow rounded-lg flex items-center justify-center">
-                  <span className="text-white text-sm sm:text-lg">⚡</span>
-                </div>
-                <div>
-                  <div className="font-bold text-gray-900 text-sm sm:text-base">20hs</div>
-                  <div className="text-xs sm:text-sm text-gray-600">Tiempo ahorrado semanal</div>
+                <div className="text-center sm:text-left">
+                  <div className="font-bold text-gray-900 text-lg sm:text-base">+300%</div>
+                  <div className="text-sm sm:text-sm text-gray-600 leading-tight">Más clientes conseguidos</div>
                 </div>
               </div>
               
-              <div className="flex items-center space-x-3 bg-white/60 backdrop-blur-sm rounded-lg p-3 sm:p-4 border border-primary-light-pink/20">
-                <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-primary-yellow to-primary-light-pink rounded-lg flex items-center justify-center">
-                  <span className="text-gray-900 text-sm sm:text-lg">🎯</span>
+              <div className="flex items-center justify-center sm:justify-start space-x-3 bg-white/60 backdrop-blur-sm rounded-xl p-4 sm:p-4 border border-primary-light-pink/20 min-h-[80px]">
+                <div className="w-10 h-10 sm:w-10 sm:h-10 bg-gradient-to-br from-primary-pink to-primary-yellow rounded-lg flex items-center justify-center flex-shrink-0">
+                  <span className="text-white text-lg sm:text-lg">⚡</span>
                 </div>
-                <div>
-                  <div className="font-bold text-gray-900 text-sm sm:text-base">100%</div>
-                  <div className="text-xs sm:text-sm text-gray-600">Marcas transformadas</div>
+                <div className="text-center sm:text-left">
+                  <div className="font-bold text-gray-900 text-lg sm:text-base">20hs</div>
+                  <div className="text-sm sm:text-sm text-gray-600 leading-tight">Tiempo ahorrado semanal</div>
+                </div>
+              </div>
+              
+              <div className="flex items-center justify-center sm:justify-start space-x-3 bg-white/60 backdrop-blur-sm rounded-xl p-4 sm:p-4 border border-primary-light-pink/20 min-h-[80px]">
+                <div className="w-10 h-10 sm:w-10 sm:h-10 bg-gradient-to-br from-primary-yellow to-primary-light-pink rounded-lg flex items-center justify-center flex-shrink-0">
+                  <span className="text-gray-900 text-lg sm:text-lg">🎯</span>
+                </div>
+                <div className="text-center sm:text-left">
+                  <div className="font-bold text-gray-900 text-lg sm:text-base">100%</div>
+                  <div className="text-sm sm:text-sm text-gray-600 leading-tight">Marcas transformadas</div>
                 </div>
               </div>
             </div>

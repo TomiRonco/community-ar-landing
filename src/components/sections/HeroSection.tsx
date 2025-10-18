@@ -4,20 +4,20 @@ import Image from 'next/image';
 
 export default function HeroSection() {
   return (
-    <section id="inicio" className="min-h-screen bg-gradient-to-br from-white via-primary-light-pink/5 to-primary-blue/5 pt-20">
-      <div className="max-w-7xl mx-auto px-4 py-16">
-        <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[calc(100vh-8rem)]">
+    <section id="inicio" className="min-h-screen bg-gradient-to-br from-white via-primary-light-pink/5 to-primary-blue/5 pt-16 sm:pt-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-16">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center min-h-[calc(100vh-6rem)] sm:min-h-[calc(100vh-8rem)]">
           
           {/* Contenido Principal */}
-          <div className="space-y-8">
+          <div className="space-y-6 sm:space-y-8 text-center lg:text-left">
             
             {/* Badge de credibilidad */}
-            <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-primary-blue/10 to-primary-pink/10 rounded-full border border-primary-blue/20">
-              <span className="text-primary-blue font-medium">🚀 Más de 15 Empresas Confían en Nosotros</span>
+            <div className="inline-flex items-center px-3 sm:px-4 py-2 bg-gradient-to-r from-primary-blue/10 to-primary-pink/10 rounded-full border border-primary-blue/20">
+              <span className="text-sm sm:text-base text-primary-blue font-medium">🚀 Más de 15 Empresas Confían en Nosotros</span>
             </div>
             
             {/* Título Principal */}
-            <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
               Transformamos Tu 
               <span className="bg-gradient-to-r from-primary-blue to-primary-pink bg-clip-text text-transparent block">
                 Presencia Digital
@@ -25,59 +25,59 @@ export default function HeroSection() {
             </h1>
             
             {/* Subtítulo */}
-            <p className="text-xl text-gray-600 leading-relaxed max-w-lg">
+            <p className="text-lg sm:text-xl text-gray-600 leading-relaxed max-w-2xl mx-auto lg:mx-0">
               Impulsamos tu marca con estrategias de <strong className="text-primary-blue">Community Management</strong>, 
               <strong className="text-primary-pink"> Desarrollo Web</strong> y <strong className="text-primary-blue">Marketing Digital</strong> 
               que generan resultados reales.
             </p>
             
             {/* Beneficios Clave */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-              <div className="flex items-center space-x-3 bg-white/60 backdrop-blur-sm rounded-lg p-4 border border-primary-light-pink/20">
-                <div className="w-10 h-10 bg-gradient-to-br from-primary-blue to-primary-pink rounded-lg flex items-center justify-center">
-                  <span className="text-white text-lg">📈</span>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
+              <div className="flex items-center space-x-3 bg-white/60 backdrop-blur-sm rounded-lg p-3 sm:p-4 border border-primary-light-pink/20">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-primary-blue to-primary-pink rounded-lg flex items-center justify-center">
+                  <span className="text-white text-sm sm:text-lg">📈</span>
                 </div>
                 <div>
-                  <div className="font-bold text-gray-900">+300%</div>
-                  <div className="text-sm text-gray-600">Crecimiento promedio</div>
+                  <div className="font-bold text-gray-900 text-sm sm:text-base">+300%</div>
+                  <div className="text-xs sm:text-sm text-gray-600">Crecimiento promedio</div>
                 </div>
               </div>
               
-              <div className="flex items-center space-x-3 bg-white/60 backdrop-blur-sm rounded-lg p-4 border border-primary-light-pink/20">
-                <div className="w-10 h-10 bg-gradient-to-br from-primary-pink to-primary-yellow rounded-lg flex items-center justify-center">
-                  <span className="text-white text-lg">⚡</span>
+              <div className="flex items-center space-x-3 bg-white/60 backdrop-blur-sm rounded-lg p-3 sm:p-4 border border-primary-light-pink/20">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-primary-pink to-primary-yellow rounded-lg flex items-center justify-center">
+                  <span className="text-white text-sm sm:text-lg">⚡</span>
                 </div>
                 <div>
-                  <div className="font-bold text-gray-900">24h</div>
-                  <div className="text-sm text-gray-600">Tiempo de respuesta</div>
+                  <div className="font-bold text-gray-900 text-sm sm:text-base">24h</div>
+                  <div className="text-xs sm:text-sm text-gray-600">Tiempo de respuesta</div>
                 </div>
               </div>
               
-              <div className="flex items-center space-x-3 bg-white/60 backdrop-blur-sm rounded-lg p-4 border border-primary-light-pink/20">
-                <div className="w-10 h-10 bg-gradient-to-br from-primary-yellow to-primary-light-pink rounded-lg flex items-center justify-center">
-                  <span className="text-gray-900 text-lg">🎯</span>
+              <div className="flex items-center space-x-3 bg-white/60 backdrop-blur-sm rounded-lg p-3 sm:p-4 border border-primary-light-pink/20">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-primary-yellow to-primary-light-pink rounded-lg flex items-center justify-center">
+                  <span className="text-gray-900 text-sm sm:text-lg">🎯</span>
                 </div>
                 <div>
-                  <div className="font-bold text-gray-900">100%</div>
-                  <div className="text-sm text-gray-600">Estrategias personalizadas</div>
+                  <div className="font-bold text-gray-900 text-sm sm:text-base">100%</div>
+                  <div className="text-xs sm:text-sm text-gray-600">Estrategias personalizadas</div>
                 </div>
               </div>
             </div>
             
             {/* Botones de Acción */}
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <a
                 href="https://wa.me/5493465486960?text=Hola! Quiero una consulta gratuita para mi negocio"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-8 py-4 bg-gradient-to-r from-primary-blue to-primary-pink text-white rounded-xl hover:from-primary-pink hover:to-primary-blue transition-all duration-300 font-semibold text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+                className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-primary-blue to-primary-pink text-white rounded-xl hover:from-primary-pink hover:to-primary-blue transition-all duration-300 font-semibold text-base sm:text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 text-center"
               >
                 🚀 Consulta Gratuita
               </a>
               
               <a
                 href="#servicios"
-                className="px-8 py-4 bg-white/80 backdrop-blur-sm border-2 border-primary-blue text-primary-blue rounded-xl hover:bg-primary-blue hover:text-white transition-all duration-300 font-semibold text-lg"
+                className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-white/80 backdrop-blur-sm border-2 border-primary-blue text-primary-blue rounded-xl hover:bg-primary-blue hover:text-white transition-all duration-300 font-semibold text-base sm:text-lg text-center"
               >
                 Ver Nuestros Servicios
               </a>
@@ -99,14 +99,14 @@ export default function HeroSection() {
           </div>
           
           {/* Imagen/Visual */}
-          <div className="relative">
+          <div className="relative mt-8 lg:mt-0">
             {/* Elemento decorativo */}
-            <div className="absolute inset-0 bg-gradient-to-br from-primary-blue/20 to-primary-pink/20 rounded-3xl transform rotate-6"></div>
-            <div className="relative bg-white/80 backdrop-blur-sm rounded-3xl p-8 border border-primary-light-pink/20 shadow-2xl">
+            <div className="absolute inset-0 bg-gradient-to-br from-primary-blue/20 to-primary-pink/20 rounded-2xl lg:rounded-3xl transform rotate-3 lg:rotate-6"></div>
+            <div className="relative bg-white/80 backdrop-blur-sm rounded-2xl lg:rounded-3xl p-6 sm:p-8 border border-primary-light-pink/20 shadow-2xl">
               
               {/* Logo */}
-              <div className="text-center mb-8">
-                <div className="w-24 h-24 mx-auto mb-4 rounded-2xl overflow-hidden shadow-lg">
+              <div className="text-center mb-6 sm:mb-8">
+                <div className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 mx-auto mb-4 rounded-xl lg:rounded-2xl overflow-hidden shadow-lg">
                   <Image
                     src="/assets/cmar.jpg"
                     alt="Community AR Logo"
@@ -115,7 +115,7 @@ export default function HeroSection() {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h3 className="text-2xl font-bold">
+                <h3 className="text-xl sm:text-2xl font-bold">
                   <span className="bg-gradient-to-r from-primary-blue to-primary-pink bg-clip-text text-transparent">
                     Community AR
                   </span>

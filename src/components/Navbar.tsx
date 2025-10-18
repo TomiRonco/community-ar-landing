@@ -42,13 +42,13 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-sm">
-      <div className="max-w-6xl mx-auto px-4">
-        <div className="flex justify-between items-center py-4">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center py-3 sm:py-4">
           
           {/* Logo */}
-          <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 rounded-lg overflow-hidden">
+          <div className="flex items-center space-x-2 sm:space-x-3">
+            <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg overflow-hidden">
               <Image
                 src={getAssetPath("/assets/cmar.jpg")}
                 alt="Community AR Logo"
@@ -57,7 +57,7 @@ export default function Navbar() {
                 className="w-full h-full object-cover"
               />
             </div>
-            <span className="text-xl font-bold text-gray-900">Community AR</span>
+            <span className="text-lg sm:text-xl font-bold text-gray-900">Community AR</span>
           </div>
 
           {/* Enlaces desktop */}
@@ -97,18 +97,18 @@ export default function Navbar() {
 
         {/* Menú mobile */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 border-t">
-            <div className="flex flex-col space-y-4">
+          <div className="md:hidden py-4 border-t border-gray-100">
+            <div className="flex flex-col space-y-3">
               {navItems.map((item) => {
                 const isActive = activeSection === item.href.substring(1);
                 return (
                   <a
                     key={item.href}
                     href={item.href}
-                    className={`transition-colors font-medium ${
+                    className={`transition-colors font-medium py-2 px-2 rounded-lg ${
                       isActive 
-                        ? 'text-primary-blue' 
-                        : 'text-gray-700 hover:text-primary-blue'
+                        ? 'text-primary-blue bg-primary-blue/10' 
+                        : 'text-gray-700 hover:text-primary-blue hover:bg-gray-50'
                     }`}
                     onClick={handleNavClick}
                   >

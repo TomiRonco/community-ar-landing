@@ -44,30 +44,30 @@ export default function PricingSection() {
   ];
 
   return (
-    <section id="precios" className="py-12 bg-gradient-to-br from-primary-blue/5 via-white to-primary-yellow/5">
-      <div className="max-w-7xl mx-auto px-4">
+    <section id="precios" className="py-8 sm:py-12 lg:py-16 bg-gradient-to-br from-primary-blue/5 via-white to-primary-yellow/5">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-6">
+        <div className="text-center mb-8 sm:mb-12">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6">
             <span className="text-gray-900">Encuentra el Plan Perfecto </span>
             <span className="bg-gradient-to-r from-primary-blue to-primary-pink bg-clip-text text-transparent block">
               Para Tu Negocio
             </span>
           </h2>
           
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-4">
             Cada negocio es único. Por eso ofrecemos soluciones flexibles que se adaptan 
             perfectamente a tus objetivos y presupuesto.
           </p>
         </div>
 
         {/* Grid de planes */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 mb-8 sm:mb-12">
           {plans.map((plan, index) => (
             <div
               key={index}
-              className={`group bg-white/80 backdrop-blur-sm rounded-2xl p-8 relative hover:shadow-2xl transition-all duration-500 border transform hover:-translate-y-2 ${
+              className={`group bg-white/80 backdrop-blur-sm rounded-2xl p-6 sm:p-8 relative hover:shadow-2xl transition-all duration-500 border transform hover:-translate-y-2 ${
                 plan.popular 
                   ? 'ring-2 ring-primary-pink border-primary-pink/30 bg-gradient-to-br from-primary-light-pink/20 to-white/80 scale-105' 
                   : 'border-primary-light-pink/20 hover:border-primary-blue/30'

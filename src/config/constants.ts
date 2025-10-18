@@ -96,9 +96,9 @@ export const APP_CONFIG = {
     },
     trustedBy: "Más de 40 Empresas Confían en Nosotros",
     heroTitle: {
-      main: "Transformamos Tu",
-      highlight: "Presencia Digital",
-      subtitle: "para que atraigas más clientes"
+      main: "Agencia de Community Management y",
+      highlight: "Marketing Digital en Argentina",
+      subtitle: "Desarrollo web que atrae más clientes a tu negocio"
     },
     heroDescription: "Conseguí más clientes, ahorrá tiempo y transformá tu marca con estrategias que realmente funcionan y generan resultados que podés ver.",
     cta: {

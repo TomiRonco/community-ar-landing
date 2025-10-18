@@ -102,7 +102,7 @@ export default function HeroSection() {
                 <div className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 mx-auto mb-4 rounded-xl lg:rounded-2xl overflow-hidden shadow-lg">
                   <Image
                     src="/assets/cmar.jpg"
-                    alt="Community AR Logo"
+                    alt="Community AR - Agencia de Marketing Digital y Community Management en Santa Fe, Argentina"
                     width={96}
                     height={96}
                     className="w-full h-full object-cover"

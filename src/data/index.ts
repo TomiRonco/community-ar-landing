@@ -4,8 +4,10 @@ import { Service, TeamMember, PricingPlan, ContactInfo, Metric, NavItem } from '
 export const navigationItems: NavItem[] = [
   { name: 'Inicio', href: '#inicio' },
   { name: 'Servicios', href: '#servicios' },
+  { name: 'Casos de Éxito', href: '#casos-exito' },
   { name: 'Nosotros', href: '#nosotros' },
   { name: 'Planes', href: '#precios' },
+  { name: 'FAQ', href: '#preguntas-frecuentes' },
   { name: 'Contacto', href: '#contacto' }
 ];
 

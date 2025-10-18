@@ -30,7 +30,7 @@ export default function HeroSection() {
             {/* Subtítulo */}
             <p className="text-lg sm:text-xl text-gray-600 leading-relaxed max-w-2xl mx-auto lg:mx-0">
               Impulsamos tu marca con estrategias de <strong className="text-primary-blue">Community Management</strong>, 
-              <strong className="text-primary-pink"> Desarrollo Web</strong> y <strong className="text-primary-blue">Marketing Digital</strong> 
+              <strong className="text-primary-pink"> Desarrollo Web</strong> y <strong className="text-primary-blue">Marketing Digital</strong>{' '}
               que generan resultados reales.
             </p>
             

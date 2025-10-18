@@ -71,7 +71,7 @@ export default function AboutUsSection() {
               {/* Stats */}
               <div className="grid grid-cols-2 gap-4 sm:gap-6">
                 <div className="text-center bg-gradient-to-br from-primary-blue/10 to-transparent p-4 sm:p-6 rounded-2xl">
-                  <div className="text-2xl sm:text-3xl font-bold text-primary-blue mb-1 sm:mb-2">Más de 15</div>
+                  <div className="text-2xl sm:text-3xl font-bold text-primary-blue mb-1 sm:mb-2">Más de 40</div>
                   <div className="text-sm sm:text-base text-gray-600">Clientes Satisfechos</div>
                 </div>
                 <div className="text-center bg-gradient-to-br from-primary-pink/10 to-transparent p-4 sm:p-6 rounded-2xl">

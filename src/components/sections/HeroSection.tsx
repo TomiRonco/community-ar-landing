@@ -13,7 +13,7 @@ export default function HeroSection() {
             
             {/* Badge de credibilidad */}
             <div className="inline-flex items-center px-3 sm:px-4 py-2 bg-gradient-to-r from-primary-blue/10 to-primary-pink/10 rounded-full border border-primary-blue/20">
-              <span className="text-sm sm:text-base text-primary-blue font-medium">🚀 Más de 15 Empresas Confían en Nosotros</span>
+              <span className="text-sm sm:text-base text-primary-blue font-medium">🚀 Más de 40 Empresas Confían en Nosotros</span>
             </div>
             
             {/* Título Principal */}
@@ -92,7 +92,7 @@ export default function HeroSection() {
               </div>
               <div>
                 <div className="text-sm text-gray-600">
-                  <span className="font-semibold text-primary-blue">Más de 15 clientes satisfechos</span> en Alcorta y toda Argentina
+                  <span className="font-semibold text-primary-blue">Más de 40 clientes satisfechos</span> en Alcorta y toda Argentina
                 </div>
               </div>
             </div>

@@ -8,7 +8,7 @@ export default function ServicesSection() {
       subtitle: "Community Management",
       description: "Conseguí más clientes y transformá tu marca en una comunidad fiel que te recomienda todos los días.",
       features: [
-        "Ahorrá 20 horas semanales gestionando tus redes",
+        "Creá presencia profesional que atrae clientes",
         "Atraé clientes ideales con contenido que convierte",
         "Generá engagement auténtico que se traduce en ventas",
         "Conocé exactamente qué funciona con reportes claros"

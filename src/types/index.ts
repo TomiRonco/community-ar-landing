@@ -34,14 +34,6 @@ export interface Metric {
   description: string;
 }
 
-export interface TeamMember {
-  name: string;
-  role: string;
-  description: string;
-  instagramPost: string;
-  embedCode: string;
-}
-
 export interface PricingPlan {
   name: string;
   description: string;

@@ -1,30 +1,6 @@
 'use client';
 
 export default function AboutUsSection() {
-  const teamMembers = [
-    {
-      name: "María",
-      role: "Especialista en Estrategia de Contenido",
-      avatar: "👩‍💼",
-      instagramPost: "https://www.instagram.com/p/DL_RICMMKvu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-      embedCode: "DL_RICMMKvu"
-    },
-    {
-      name: "Rodrigo", 
-      role: "Experto en Diseño Gráfico",
-      avatar: "👨‍🎨",
-      instagramPost: "https://www.instagram.com/p/DL0588IMQka/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-      embedCode: "DL0588IMQka"
-    },
-    {
-      name: "Ana",
-      role: "Community Manager Senior",
-      avatar: "👩‍💻",
-      instagramPost: "https://www.instagram.com/p/DL8JEoHutzZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-      embedCode: "DL8JEoHutzZ"
-    }
-  ];
-
   return (
     <section id="nosotros" className="py-6 sm:py-8 lg:py-12 bg-gradient-to-br from-primary-yellow/5 via-white to-primary-light-pink/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -88,31 +64,6 @@ export default function AboutUsSection() {
               </div>
             </div>
           </div>
-        </div>
-
-        {/* Equipo con Instagram Embeds */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-          {teamMembers.map((member, index) => (
-            <div key={index} className="group bg-white/80 backdrop-blur-sm rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 border border-primary-light-pink/20 hover:border-primary-pink/30 transform hover:-translate-y-2">
-              
-              {/* Instagram Embed */}
-              <div className="relative bg-white overflow-hidden">
-                <iframe 
-                  src={`https://www.instagram.com/p/${member.embedCode}/embed/`}
-                  width="100%" 
-                  height="650"
-                  frameBorder="0" 
-                  scrolling="no" 
-                  allowTransparency={true}
-                  className="border-0 w-full"
-                  title={`Instagram post de ${member.name}`}
-                />
-              </div>
-              
-              {/* Hover effect */}
-              <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-primary-pink to-primary-blue transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
-            </div>
-          ))}
         </div>
       </div>
     </section>

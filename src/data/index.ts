@@ -1,4 +1,4 @@
-import { Service, TeamMember, PricingPlan, ContactInfo, Metric, NavItem } from '@/types';
+import { Service, PricingPlan, ContactInfo, Metric, NavItem } from '@/types';
 
 // Datos de navegación
 export const navigationItems: NavItem[] = [
@@ -51,31 +51,6 @@ export const services: Service[] = [
       "Tomá decisiones inteligentes con datos reales de tu negocio"
     ],
     gradient: "from-primary-yellow to-primary-blue"
-  }
-];
-
-// Datos del equipo
-export const teamMembers: TeamMember[] = [
-  {
-    name: "Fundadora",
-    role: "Community Manager & Estratega Digital",
-    description: "Especialista en crear comunidades que generan ventas reales",
-    instagramPost: "https://www.instagram.com/p/DL_RICMMKvu/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-    embedCode: "DL_RICMMKvu"
-  },
-  {
-    name: "Diseñadora",
-    role: "Diseñadora Gráfica & UX",
-    description: "Creamos diseños que enamoran y convierten",
-    instagramPost: "https://www.instagram.com/p/DL0588IMQka/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-    embedCode: "DL0588IMQka"
-  },
-  {
-    name: "Desarrollador",
-    role: "Desarrollador Web & E-commerce",
-    description: "Tecnología que impulsa tu crecimiento digital",
-    instagramPost: "https://www.instagram.com/p/DL8JEoHutzZ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-    embedCode: "DL8JEoHutzZ"
   }
 ];
 

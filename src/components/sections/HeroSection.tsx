@@ -7,7 +7,7 @@ import { cn, gradientPresets } from '@/utils/css';
 
 export default function HeroSection() {
   return (
-    <section id="inicio" className="min-h-screen bg-gradient-to-br from-white via-primary-light-pink/5 to-primary-blue/5 pt-16 sm:pt-20">
+    <section id="inicio" className="min-h-screen bg-gradient-to-br from-primary-pink/20 via-primary-light-pink/30 to-primary-pink/10 pt-16 sm:pt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-16">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center min-h-[calc(100vh-6rem)] sm:min-h-[calc(100vh-8rem)]">
           

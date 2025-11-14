@@ -7,7 +7,7 @@ import { cn, gradientPresets } from '@/utils/css';
 
 export default function HeroSection() {
   return (
-    <section id="inicio" className="relative min-h-screen bg-gradient-to-br from-primary-pink/50 via-primary-pink/35 to-primary-blue/25 pt-16 sm:pt-20">
+    <section id="inicio" className="relative min-h-screen bg-gradient-to-b from-primary-pink/50 via-primary-pink/30 to-primary-blue/15 pt-16 sm:pt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-16">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center min-h-[calc(100vh-6rem)] sm:min-h-[calc(100vh-8rem)]">
           
@@ -158,9 +158,6 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
-      
-      {/* Gradiente de difuminado para transición suave */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent via-white/30 to-white pointer-events-none"></div>
     </section>
   );
 }

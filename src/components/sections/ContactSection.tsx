@@ -2,7 +2,7 @@
 
 export default function ContactSection() {
   return (
-    <section id="contacto" className="py-6 sm:py-8 lg:py-12 bg-gradient-to-br from-primary-yellow/5 via-white to-primary-light-pink/5">
+    <section id="contacto" className="py-6 sm:py-8 lg:py-12 bg-gradient-to-b from-primary-light-pink/8 via-primary-pink/6 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}

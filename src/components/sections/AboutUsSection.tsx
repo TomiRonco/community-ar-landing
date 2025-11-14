@@ -2,7 +2,7 @@
 
 export default function AboutUsSection() {
   return (
-    <section id="nosotros" className="py-6 sm:py-8 lg:py-12 bg-gradient-to-br from-primary-yellow/5 via-white to-primary-light-pink/5">
+    <section id="nosotros" className="py-6 sm:py-8 lg:py-12 bg-gradient-to-b from-primary-pink/10 via-primary-yellow/8 to-primary-light-pink/12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}

@@ -44,7 +44,7 @@ export default function ServicesSection() {
   ];
 
   return (
-    <section id="servicios" className="py-6 sm:py-8 lg:py-12 bg-gradient-to-br from-primary-blue/5 via-white to-primary-pink/5">
+    <section id="servicios" className="py-6 sm:py-8 lg:py-12 bg-gradient-to-b from-primary-blue/15 via-primary-blue/8 to-primary-pink/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}

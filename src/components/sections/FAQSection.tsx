@@ -29,7 +29,7 @@ const faqs = [
 
 export default function FAQSection() {
   return (
-    <section id="preguntas-frecuentes" className="py-6 sm:py-8 lg:py-12 bg-gradient-to-br from-gray-50 to-white">
+    <section id="preguntas-frecuentes" className="py-6 sm:py-8 lg:py-12 bg-gradient-to-b from-primary-yellow/10 via-gray-50 to-primary-light-pink/8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}

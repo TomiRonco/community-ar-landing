@@ -15,32 +15,32 @@ export default function HeroSection() {
           <div className="space-y-6 sm:space-y-8 text-center lg:text-left">
             
             {/* Badge de credibilidad */}
-            <div className="inline-flex items-center px-3 sm:px-4 py-2 bg-gradient-to-r from-primary-blue/10 to-primary-pink/10 rounded-full border border-primary-blue/20">
-              <span className="text-sm sm:text-base text-primary-blue font-medium">
+            <div className="inline-flex items-center px-3 sm:px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full border border-primary-blue/30 shadow-sm">
+              <span className="text-sm sm:text-base text-primary-blue font-semibold">
                 {APP_CONFIG.messages.trustedBy}
               </span>
             </div>
             
             {/* Título Principal */}
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-950 leading-tight drop-shadow-sm">
               {APP_CONFIG.messages.heroTitle.main} 
               <span className="bg-gradient-to-r from-primary-blue to-primary-pink bg-clip-text text-transparent block">
                 {APP_CONFIG.messages.heroTitle.highlight}
               </span>
-              <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-gray-700 block mt-2">
+              <span className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-gray-800 block mt-2">
                 {APP_CONFIG.messages.heroTitle.subtitle}
               </span>
             </h1>
             
             {/* Subtítulo */}
-            <p className="text-lg sm:text-xl text-gray-600 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+            <p className="text-lg sm:text-xl text-gray-800 leading-relaxed max-w-2xl mx-auto lg:mx-0 drop-shadow-sm">
               {APP_CONFIG.messages.heroDescription}
             </p>
             
             {/* Beneficios Clave */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-4">
               {heroMetrics.map((metric, index) => (
-                <div key={index} className="flex items-center justify-center sm:justify-start space-x-3 bg-white/60 backdrop-blur-sm rounded-xl p-4 sm:p-4 border border-primary-light-pink/20 min-h-[80px]">
+                <div key={index} className="flex items-center justify-center sm:justify-start space-x-3 bg-white/80 backdrop-blur-sm rounded-xl p-4 sm:p-4 border border-white/40 shadow-md min-h-[80px]">
                   <div className={cn(
                     "w-10 h-10 sm:w-10 sm:h-10 rounded-lg flex items-center justify-center flex-shrink-0",
                     index === 0 ? gradientPresets.bluePink :
@@ -50,8 +50,8 @@ export default function HeroSection() {
                     <span className="text-white text-lg sm:text-lg">{metric.icon}</span>
                   </div>
                   <div className="text-center sm:text-left">
-                    <div className="font-bold text-gray-900 text-lg sm:text-base">{metric.value}</div>
-                    <div className="text-sm sm:text-sm text-gray-600 leading-tight">{metric.label}</div>
+                    <div className="font-bold text-gray-950 text-lg sm:text-base">{metric.value}</div>
+                    <div className="text-sm sm:text-sm text-gray-700 leading-tight">{metric.label}</div>
                   </div>
                 </div>
               ))}
@@ -70,22 +70,22 @@ export default function HeroSection() {
               
               <a
                 href="#servicios"
-                className="w-full sm:w-auto px-6 sm:px-8 py-4 sm:py-4 bg-white/80 backdrop-blur-sm border-2 border-primary-blue text-primary-blue rounded-xl hover:bg-primary-blue hover:text-white transition-all duration-300 font-semibold text-base sm:text-lg text-center min-h-[48px] flex items-center justify-center"
+                className="w-full sm:w-auto px-6 sm:px-8 py-4 sm:py-4 bg-white/90 backdrop-blur-sm border-2 border-primary-blue text-primary-blue rounded-xl hover:bg-primary-blue hover:text-white transition-all duration-300 font-semibold text-base sm:text-lg text-center min-h-[48px] flex items-center justify-center shadow-md"
               >
                 Ver Nuestros Servicios
               </a>
             </div>
             
             {/* Testimonial / Proof */}
-            <div className="flex items-center space-x-4 pt-4">
+            <div className="flex items-center space-x-4 pt-4 bg-white/70 backdrop-blur-sm rounded-xl p-3 shadow-sm">
               <div className="flex -space-x-2">
                 <div className="w-10 h-10 bg-gradient-to-br from-primary-blue to-primary-pink rounded-full border-2 border-white"></div>
                 <div className="w-10 h-10 bg-gradient-to-br from-primary-pink to-primary-yellow rounded-full border-2 border-white"></div>
                 <div className="w-10 h-10 bg-gradient-to-br from-primary-yellow to-primary-light-pink rounded-full border-2 border-white"></div>
               </div>
               <div>
-                <div className="text-sm text-gray-600">
-                  <span className="font-semibold text-primary-blue">Más de 40 clientes satisfechos</span> en Alcorta y toda Argentina
+                <div className="text-sm text-gray-800">
+                  <span className="font-bold text-primary-blue">Más de 40 clientes satisfechos</span> en Alcorta y toda Argentina
                 </div>
               </div>
             </div>

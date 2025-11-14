@@ -11,7 +11,7 @@ const faqs = [
   },
   {
     question: "¿Trabajan con empresas de toda Argentina?",
-    answer: "Sí, trabajamos con empresas de todo el país, pero nos especializamos en Santa Fe y alrededores (Alcorta, Rosario, Villa Constitución, Casilda, Venado Tuerto). Esto nos permite ofrecer un servicio más personalizado y entender mejor el mercado local."
+    answer: "Sí, trabajamos con empresas de todo el país de forma remota. Tenemos experiencia colaborando con clientes en Buenos Aires, Córdoba, Mendoza, Santa Fe y todas las provincias argentinas. Utilizamos herramientas digitales que nos permiten ofrecer un servicio profesional y cercano sin importar la distancia."
   },
   {
     question: "¿Qué diferencia a Community AR de otras agencias?",

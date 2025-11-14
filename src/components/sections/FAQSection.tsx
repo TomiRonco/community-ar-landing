@@ -3,7 +3,7 @@ import { APP_CONFIG } from '@/config/constants';
 const faqs = [
   {
     question: "¿Qué incluye el servicio de Community Management?",
-    answer: "Nuestro servicio incluye gestión completa de redes sociales, creación de contenido estratégico, respuesta a comentarios y mensajes, análisis de métricas y reportes mensuales. Nos enfocamos en conseguir más clientes para tu negocio a través de engagement auténtico."
+    answer: "Nuestro servicio incluye gestión completa de redes sociales, creación de contenido estratégico, análisis de métricas y reportes mensuales. Nos enfocamos en conseguir más clientes para tu negocio a través de engagement auténtico."
   },
   {
     question: "¿Cuánto tiempo lleva ver resultados en redes sociales?",

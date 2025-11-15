@@ -1,48 +1,8 @@
 'use client';
 
-export default function ServicesSection() {
-  const serviceCategories = [
-    {
-      icon: "📱",
-      title: "Redes Sociales",
-      subtitle: "Community Management",
-      description: "Conseguí más clientes y transformá tu marca en una comunidad fiel que te recomienda todos los días.",
-      features: [
-        "Creá presencia profesional que atrae clientes",
-        "Atraé clientes ideales con contenido que convierte",
-        "Generá engagement auténtico que se traduce en ventas",
-        "Conocé exactamente qué funciona con reportes claros"
-      ],
-      gradient: "from-primary-blue to-primary-pink"
-    },
-    {
-      icon: "🌐",
-      title: "Web & E-commerce",
-      subtitle: "Desarrollo Digital",
-      description: "Vendé más y automatizá tu negocio con sitios que convierten visitantes en clientes felices las 24 horas.",
-      features: [
-        "Conseguí más leads con páginas que convencen y venden",
-        "Vendé mientras dormís con tu tienda online optimizada",
-        "Ahorrá tiempo con sistemas que automatizan tu negocio",
-        "Aparecé primero en Google y superá a tu competencia"
-      ],
-      gradient: "from-primary-pink to-primary-yellow"
-    },
-    {
-      icon: "📈",
-      title: "Marketing Digital",
-      subtitle: "Estrategia & Crecimiento",
-      description: "Multiplicá tus ventas con estrategias que te traen clientes de calidad y resultados que podés medir.",
-      features: [
-        "Conseguí clientes de calidad con campañas que funcionan",
-        "Ahorrá dinero invirtiendo solo en lo que trae resultados",
-        "Transformá tu marca en referente de tu industria",
-        "Tomá decisiones inteligentes con datos reales de tu negocio"
-      ],
-      gradient: "from-primary-yellow to-primary-blue"
-    }
-  ];
+import { services } from '@/data';
 
+export default function ServicesSection() {
   return (
     <section id="servicios" className="py-6 sm:py-8 lg:py-12 bg-gradient-to-b from-primary-blue/15 via-primary-blue/8 to-primary-pink/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -64,7 +24,7 @@ export default function ServicesSection() {
 
         {/* Grid de categorías de servicios */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-12 items-start">
-          {serviceCategories.map((category, index) => (
+          {services.map((category, index) => (
             <div
               key={index}
               className="group bg-white/90 backdrop-blur-sm rounded-2xl sm:rounded-3xl p-6 sm:p-8 hover:shadow-2xl transition-all duration-500 border border-primary-light-pink/20 hover:border-primary-blue/30 transform hover:-translate-y-3 flex flex-col h-auto"

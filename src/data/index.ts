@@ -16,40 +16,44 @@ export const services: Service[] = [
   {
     icon: "📱",
     title: "Gestión de Redes Sociales",
-    subtitle: "Estrategia · Contenido · Planificación",
+    subtitle: "",
     description: "Construimos presencia digital con coherencia y propósito.",
-    features: [],
+    features: [
+      "Estrategia",
+      "Contenido",
+      "Planificación"
+    ],
     gradient: "from-primary-blue to-primary-pink"
   },
   {
     icon: "🎨",
     title: "Branding y Estilo Visual",
-    subtitle: "Creamos identidades que comunican",
-    description: "Tu marca, con una imagen sólida y profesional en cada detalle.",
+    subtitle: "",
+    description: "Creamos identidades que comunican. Tu marca, con una imagen sólida y profesional en cada detalle.",
     features: [],
     gradient: "from-primary-pink to-primary-yellow"
   },
   {
     icon: "📸",
     title: "Fotografía y Contenido Visual",
-    subtitle: "Mostrá lo que hacés con imágenes que venden",
-    description: "Fotografía profesional para destacar tu producto.",
+    subtitle: "",
+    description: "Mostrá lo que hacés con imágenes que venden. Fotografía profesional para destacar tu producto.",
     features: [],
     gradient: "from-primary-yellow to-primary-light-pink"
   },
   {
     icon: "🌐",
     title: "Páginas Web y Tienda Online",
-    subtitle: "Llevamos tu marca al siguiente nivel digital",
-    description: "Sitios modernos, funcionales y optimizados para convertir.",
+    subtitle: "",
+    description: "Llevamos tu marca al siguiente nivel digital. Sitios modernos, funcionales y optimizados para convertir.",
     features: [],
     gradient: "from-primary-light-pink to-primary-blue"
   },
   {
     icon: "💻",
     title: "Programación y Desarrollo a Medida",
-    subtitle: "Soluciones digitales que se adaptan a tu negocio",
-    description: "Desde automatizaciones hasta sistemas personalizados.",
+    subtitle: "",
+    description: "Soluciones digitales que se adaptan a tu negocio. Desde automatizaciones hasta sistemas personalizados.",
     features: [],
     gradient: "from-primary-blue to-primary-pink"
   }

@@ -34,8 +34,8 @@ export default function AboutUsSection() {
                   </span>
                 </h3>
                 <p className="text-base sm:text-lg text-gray-600 leading-relaxed mb-4 sm:mb-6">
-                  Imaginá tener un equipo que entiende tu negocio y trabaja para que <strong>conseguís más clientes</strong>, 
-                  <strong> ahorrés tiempo</strong> y <strong>transformés tu marca</strong> en referente de tu industria.
+                  Imaginá tener un equipo que entiende tu negocio y trabaja para que <strong>consigas más clientes</strong>, 
+                  <strong> ahorres tiempo</strong> y <strong>transformes tu marca</strong> en referente de tu industria.
                 </p>
                 <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
                   Cada estrategia que creamos está pensada para que veas resultados reales: más ventas, 

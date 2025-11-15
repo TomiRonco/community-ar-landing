@@ -43,22 +43,12 @@ export default function ServicesSection() {
               </div>
               
               {/* Descripción */}
-              <p className="text-gray-600 text-center leading-relaxed mb-6 sm:mb-8 text-base sm:text-lg">
+              <p className="text-gray-600 text-center leading-relaxed mb-6 sm:mb-8 text-base sm:text-lg flex-grow">
                 {category.description}
               </p>
               
-              {/* Lista de características */}
-              <div className="space-y-3 sm:space-y-4 flex-grow">
-                {category.features.map((feature, featureIndex) => (
-                  <div key={featureIndex} className="flex items-start space-x-3">
-                    <div className={`w-2 h-2 rounded-full bg-gradient-to-r ${category.gradient} mt-2 flex-shrink-0`}></div>
-                    <span className="text-gray-700 leading-relaxed text-sm sm:text-base">{feature}</span>
-                  </div>
-                ))}
-              </div>
-              
               {/* Línea decorativa al final */}
-              <div className="mt-6 sm:mt-8 flex justify-center">
+              <div className="flex justify-center">
                 <div className={`w-12 sm:w-16 h-1 bg-gradient-to-r ${category.gradient} rounded-full opacity-70 group-hover:opacity-100 transition-opacity duration-300`}></div>
               </div>
             </div>
@@ -86,22 +76,12 @@ export default function ServicesSection() {
               </div>
               
               {/* Descripción */}
-              <p className="text-gray-600 text-center leading-relaxed mb-6 sm:mb-8 text-base sm:text-lg">
+              <p className="text-gray-600 text-center leading-relaxed mb-6 sm:mb-8 text-base sm:text-lg flex-grow">
                 {category.description}
               </p>
               
-              {/* Lista de características */}
-              <div className="space-y-3 sm:space-y-4 flex-grow">
-                {category.features.map((feature, featureIndex) => (
-                  <div key={featureIndex} className="flex items-start space-x-3">
-                    <div className={`w-2 h-2 rounded-full bg-gradient-to-r ${category.gradient} mt-2 flex-shrink-0`}></div>
-                    <span className="text-gray-700 leading-relaxed text-sm sm:text-base">{feature}</span>
-                  </div>
-                ))}
-              </div>
-              
               {/* Línea decorativa al final */}
-              <div className="mt-6 sm:mt-8 flex justify-center">
+              <div className="flex justify-center">
                 <div className={`w-12 sm:w-16 h-1 bg-gradient-to-r ${category.gradient} rounded-full opacity-70 group-hover:opacity-100 transition-opacity duration-300`}></div>
               </div>
             </div>

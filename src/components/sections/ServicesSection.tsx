@@ -22,11 +22,54 @@ export default function ServicesSection() {
           </p>
         </div>
 
-        {/* Grid de categorías de servicios */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-12 items-start">
-          {services.map((category, index) => (
+        {/* Grid de categorías de servicios - 3 arriba */}
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-12 items-start mb-6 sm:mb-8 lg:mb-12">
+          {services.slice(0, 3).map((category, index) => (
             <div
               key={index}
+              className="group bg-white/90 backdrop-blur-sm rounded-2xl sm:rounded-3xl p-6 sm:p-8 hover:shadow-2xl transition-all duration-500 border border-primary-light-pink/20 hover:border-primary-blue/30 transform hover:-translate-y-3 flex flex-col h-auto"
+            >
+              {/* Header del bloque */}
+              <div className="text-center mb-6 sm:mb-8">
+                <div className="text-4xl sm:text-5xl lg:text-6xl mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300">
+                  {category.icon}
+                </div>
+                <h3 className="text-xl sm:text-2xl font-bold text-gray-800 mb-2 group-hover:text-primary-blue transition-colors leading-tight">
+                  {category.title}
+                </h3>
+                <div className={`text-xs sm:text-sm font-semibold bg-gradient-to-r ${category.gradient} bg-clip-text text-transparent uppercase tracking-wide`}>
+                  {category.subtitle}
+                </div>
+              </div>
+              
+              {/* Descripción */}
+              <p className="text-gray-600 text-center leading-relaxed mb-6 sm:mb-8 text-base sm:text-lg">
+                {category.description}
+              </p>
+              
+              {/* Lista de características */}
+              <div className="space-y-3 sm:space-y-4 flex-grow">
+                {category.features.map((feature, featureIndex) => (
+                  <div key={featureIndex} className="flex items-start space-x-3">
+                    <div className={`w-2 h-2 rounded-full bg-gradient-to-r ${category.gradient} mt-2 flex-shrink-0`}></div>
+                    <span className="text-gray-700 leading-relaxed text-sm sm:text-base">{feature}</span>
+                  </div>
+                ))}
+              </div>
+              
+              {/* Línea decorativa al final */}
+              <div className="mt-6 sm:mt-8 flex justify-center">
+                <div className={`w-12 sm:w-16 h-1 bg-gradient-to-r ${category.gradient} rounded-full opacity-70 group-hover:opacity-100 transition-opacity duration-300`}></div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Grid de 2 servicios abajo centrados */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-12 items-start max-w-5xl mx-auto">
+          {services.slice(3, 5).map((category, index) => (
+            <div
+              key={index + 3}
               className="group bg-white/90 backdrop-blur-sm rounded-2xl sm:rounded-3xl p-6 sm:p-8 hover:shadow-2xl transition-all duration-500 border border-primary-light-pink/20 hover:border-primary-blue/30 transform hover:-translate-y-3 flex flex-col h-auto"
             >
               {/* Header del bloque */}

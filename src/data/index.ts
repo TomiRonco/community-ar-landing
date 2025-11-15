@@ -26,7 +26,7 @@ export const services: Service[] = [
     gradient: "from-primary-blue to-primary-pink"
   },
   {
-    icon: "�",
+    icon: "🎨",
     title: "Branding y Estilo Visual",
     subtitle: "Identidades que Comunican",
     description: "Tu marca, con una imagen sólida y profesional en cada detalle.",

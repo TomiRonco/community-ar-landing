@@ -24,7 +24,7 @@ export const services: Service[] = [
   {
     icon: "🎨",
     title: "Branding y Estilo Visual",
-    subtitle: "Identidades que Comunican",
+    subtitle: "Creamos identidades que comunican",
     description: "Tu marca, con una imagen sólida y profesional en cada detalle.",
     features: [],
     gradient: "from-primary-pink to-primary-yellow"
@@ -32,7 +32,7 @@ export const services: Service[] = [
   {
     icon: "📸",
     title: "Fotografía y Contenido Visual",
-    subtitle: "Mostrá lo que Hacés",
+    subtitle: "Mostrá lo que hacés con imágenes que venden",
     description: "Fotografía profesional para destacar tu producto.",
     features: [],
     gradient: "from-primary-yellow to-primary-light-pink"
@@ -40,16 +40,16 @@ export const services: Service[] = [
   {
     icon: "🌐",
     title: "Páginas Web y Tienda Online",
-    subtitle: "Tu Marca al Siguiente Nivel",
-    description: "Llevamos tu marca al siguiente nivel digital.",
+    subtitle: "Llevamos tu marca al siguiente nivel digital",
+    description: "Sitios modernos, funcionales y optimizados para convertir.",
     features: [],
     gradient: "from-primary-light-pink to-primary-blue"
   },
   {
     icon: "💻",
     title: "Programación y Desarrollo a Medida",
-    subtitle: "Soluciones Digitales Personalizadas",
-    description: "Soluciones digitales que se adaptan a tu negocio.",
+    subtitle: "Soluciones digitales que se adaptan a tu negocio",
+    description: "Desde automatizaciones hasta sistemas personalizados.",
     features: [],
     gradient: "from-primary-blue to-primary-pink"
   }
